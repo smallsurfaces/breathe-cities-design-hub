@@ -1,0 +1,226 @@
+/* ─── Tailwind v4 ──────────────────────────────────────────────────────────── */
+@import "tailwindcss";
+
+/* ─── Breathe Cities design tokens ──────────────────────────────────────────
+   Import the compiled --bc-* custom properties from Style Dictionary.
+   These are the single source of truth for all colour, spacing, and
+   typography values in this project.
+   ─────────────────────────────────────────────────────────────────────────── */
+@import "../../dist/css/tokens.css";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ─── shadcn/ui CSS variable bridge ─────────────────────────────────────────
+   Map --bc-* semantic tokens onto the shadcn/ui variable contract so
+   shadcn components automatically inherit Breathe Cities branding.
+   The --bc-* vars come from the Style Dictionary build at dist/css/tokens.css.
+   Never hardcode colour values here — reference tokens only.
+   ─────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Page background and primary text */
+  --background: var(--bc-semantic-bg);
+  --foreground: var(--bc-semantic-text);
+
+  /* Card */
+  --card: var(--bc-color-white);
+  --card-foreground: var(--bc-semantic-text);
+
+  /* Popover */
+  --popover: var(--bc-color-white);
+  --popover-foreground: var(--bc-semantic-text);
+
+  /* Primary — Breathe Cities brand blue */
+  --primary: var(--bc-semantic-brand);
+  --primary-foreground: var(--bc-color-white);
+
+  /* Secondary — teal accent */
+  --secondary: var(--bc-color-teal);
+  --secondary-foreground: var(--bc-color-dark-blue);
+
+  /* Muted */
+  --muted: var(--bc-color-light-grey);
+  --muted-foreground: var(--bc-semantic-muted);
+
+  /* Accent — light teal highlight */
+  --accent: var(--bc-color-light-teal);
+  --accent-foreground: var(--bc-semantic-text);
+
+  /* Destructive — tangerine error */
+  --destructive: var(--bc-semantic-error);
+  --destructive-foreground: var(--bc-color-white);
+
+  /* Border / input / ring */
+  --border: var(--bc-semantic-border);
+  --input: var(--bc-semantic-border);
+  --ring: var(--bc-semantic-brand);
+
+  /* Border radius — bc-md (10px) as the shadcn base */
+  --radius: var(--bc-border-radius-md);
+
+  /* Chart colours — mapped to bc palette */
+  --chart-1: var(--bc-color-blue);
+  --chart-2: var(--bc-color-teal);
+  --chart-3: var(--bc-color-light-blue);
+  --chart-4: var(--bc-color-green);
+  --chart-5: var(--bc-color-tangerine);
+
+  /* Sidebar */
+  --sidebar: var(--bc-color-light-grey);
+  --sidebar-foreground: var(--bc-semantic-text);
+  --sidebar-primary: var(--bc-semantic-brand);
+  --sidebar-primary-foreground: var(--bc-color-white);
+  --sidebar-accent: var(--bc-color-light-teal);
+  --sidebar-accent-foreground: var(--bc-semantic-text);
+  --sidebar-border: var(--bc-semantic-border);
+  --sidebar-ring: var(--bc-semantic-brand);
+}
+
+/* ─── Tailwind v4 theme extension ────────────────────────────────────────────
+   CSS-first configuration — extends the Tailwind design system with
+   Breathe Cities tokens so they are available as Tailwind utilities.
+   ─────────────────────────────────────────────────────────────────────────── */
+@theme {
+  /* ── Breathe Cities raw palette — available as Tailwind colour utilities
+     e.g. bg-bc-blue, text-bc-teal, border-bc-tangerine
+     ──────────────────────────────────────────────────────────────────────── */
+
+  /* Colours — raw bc-* tokens */
+  --color-bc-white: var(--bc-color-white);
+  --color-bc-dark-blue: var(--bc-color-dark-blue);
+  --color-bc-blue: var(--bc-color-blue);
+  --color-bc-light-blue: var(--bc-color-light-blue);
+  --color-bc-teal: var(--bc-color-teal);
+  --color-bc-light-teal: var(--bc-color-light-teal);
+  --color-bc-green: var(--bc-color-green);
+  --color-bc-tangerine: var(--bc-color-tangerine);
+  --color-bc-yellow: var(--bc-color-yellow);
+  --color-bc-light-grey: var(--bc-color-light-grey);
+  --color-bc-steel: var(--bc-color-steel);
+  --color-bc-dark-blue-dim: var(--bc-color-dark-blue-dim);
+
+  /* Border radius */
+  --radius-lg: var(--radius);
+  --radius-md: var(--bc-border-radius-md);
+  --radius-sm: var(--bc-border-radius-sm);
+  --radius-bc-none: var(--bc-border-radius-none);
+  --radius-bc-circle: var(--bc-border-radius-circle);
+  --radius-bc-pill: var(--bc-border-radius-pill);
+
+  /* Spacing */
+  --spacing-bc-xs: var(--bc-spacing-xs);
+  --spacing-bc-sm: var(--bc-spacing-sm);
+  --spacing-bc-md: var(--bc-spacing-md);
+  --spacing-bc-lg: var(--bc-spacing-lg);
+  --spacing-bc-xl: var(--bc-spacing-xl);
+  --spacing-bc-2xl: var(--bc-spacing-2xl);
+  --spacing-bc-3xl: var(--bc-spacing-3xl);
+
+  /* Max widths */
+  --width-bc-container: var(--bc-container-max-width);
+  --width-bc-content: var(--bc-container-content-width);
+  --width-bc-reading: var(--bc-container-reading-width);
+
+  /* Font families */
+  --font-family-sans: var(--bc-font-family-sans);
+  --font-family-mono: var(--bc-font-family-mono);
+
+  /* Box shadows */
+  --shadow-bc-sm: var(--bc-shadow-sm);
+  --shadow-bc-md: var(--bc-shadow-md);
+  --shadow-bc-lg: var(--bc-shadow-lg);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}

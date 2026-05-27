@@ -1,0 +1,631 @@
+{
+  "city": "accra",
+  "capturedAt": "2026-05-24T20:35:39.444Z",
+  "parameters": {
+    "pm25": [
+      {
+        "id": "9764",
+        "name": "US Diplomatic Post: Accra",
+        "locality": "Accra",
+        "coordinates": [
+          -0.170699,
+          5.579447
+        ],
+        "quality": "high",
+        "provider": "StateAir Accra",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2020-05-01T01:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 28,
+            "unit": "µg/m³",
+            "datetimeUtc": "2025-03-04T12:00:00Z",
+            "ageHours": 10712.595104444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "947129",
+        "name": "ARJWQ6WV",
+        "locality": null,
+        "coordinates": [
+          -0.18585528584023492,
+          5.651068809036082
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Unknown Community Organization",
+        "firstSeen": "2022-10-20T00:02:16Z",
+        "attribution": "Unknown Community Organization",
+        "parameters": {
+          "pm25": {
+            "value": 7.86,
+            "unit": "µg/m³",
+            "datetimeUtc": "2023-09-15T23:05:19Z",
+            "ageHours": 23565.506493333334,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "947145",
+        "name": "ANHLHLNJ",
+        "locality": null,
+        "coordinates": [
+          -0.18585528584023492,
+          5.651068809036082
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Unknown Community Organization",
+        "firstSeen": "2022-10-20T00:01:31Z",
+        "attribution": "Unknown Community Organization",
+        "parameters": {
+          "pm25": {
+            "value": 7.55,
+            "unit": "µg/m³",
+            "datetimeUtc": "2023-09-15T23:02:01Z",
+            "ageHours": 23565.561493333335,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "1236045",
+        "name": "Physics Department-UG-Accra/CAOA-UESD",
+        "locality": null,
+        "coordinates": [
+          -0.186,
+          5.651
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2023-07-15T13:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 23,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-04-28T10:00:00Z",
+            "ageHours": 634.5951044444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "2453497",
+        "name": "Afri-SET",
+        "locality": null,
+        "coordinates": [
+          -0.18587458123045222,
+          5.653842319123899
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Afri-SET",
+        "firstSeen": "2024-02-20T14:00:00Z",
+        "attribution": "Afri-SET",
+        "parameters": {
+          "pm25": {
+            "value": 9.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.5951044444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2453500",
+        "name": "Afri-SET",
+        "locality": null,
+        "coordinates": [
+          -0.18587458123045222,
+          5.653842319123899
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Afri-SET",
+        "firstSeen": "2024-02-20T14:00:00Z",
+        "attribution": "Afri-SET",
+        "parameters": {
+          "pm25": {
+            "value": 11.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.5951044444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2453501",
+        "name": "Afri-SET",
+        "locality": null,
+        "coordinates": [
+          -0.18587458123045222,
+          5.653842319123899
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Afri-SET",
+        "firstSeen": "2024-02-20T14:00:00Z",
+        "attribution": "Afri-SET",
+        "parameters": {
+          "pm25": {
+            "value": 9.1,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.5951044444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025580",
+        "name": "Dansoman Roundabout ",
+        "locality": null,
+        "coordinates": [
+          -0.26448,
+          5.55851
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:15:51Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 7.49,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:50:11Z",
+            "ageHours": 0.7587155555555556,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025581",
+        "name": "Kwashieman Presby Church ",
+        "locality": null,
+        "coordinates": [
+          -0.26877,
+          5.59389
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:04:07Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 6.26,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:06:49Z",
+            "ageHours": 0.48149333333333333,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025582",
+        "name": "West Hills Mall",
+        "locality": null,
+        "coordinates": [
+          -0.34229,
+          5.54579
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:02:44Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 13.32,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:06:43Z",
+            "ageHours": 0.48316,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025583",
+        "name": "Ashaley Botwe School Junction",
+        "locality": null,
+        "coordinates": [
+          -0.12412,
+          5.67614
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:02:27Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 7.04,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:06:46Z",
+            "ageHours": 0.4823266666666667,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025584",
+        "name": "37 Lorry Station ",
+        "locality": null,
+        "coordinates": [
+          -0.17964,
+          5.58892
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:03:20Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 7.96,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:06:23Z",
+            "ageHours": 0.48871555555555557,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025585",
+        "name": "Graphic Road",
+        "locality": null,
+        "coordinates": [
+          -0.22526,
+          5.55895
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:11:21Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 8.03,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:04:49Z",
+            "ageHours": 0.5148266666666667,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025586",
+        "name": "Lapaz Intersection ",
+        "locality": null,
+        "coordinates": [
+          -0.24896,
+          5.60724
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:02:29Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 7.41,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:04:17Z",
+            "ageHours": 0.5237155555555556,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025587",
+        "name": "Madina Zongo Junction ",
+        "locality": null,
+        "coordinates": [
+          -0.17295,
+          5.6779
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:07:26Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 32.03,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:57:55Z",
+            "ageHours": 0.6298266666666666,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025588",
+        "name": "Agbogbloshie ",
+        "locality": null,
+        "coordinates": [
+          -0.21927,
+          5.55147
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:04:57Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 16.62,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:54:26Z",
+            "ageHours": 0.6878822222222222,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025589",
+        "name": "Makola ",
+        "locality": null,
+        "coordinates": [
+          -0.2072,
+          5.54848
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:05:29Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 6.62,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:52:55Z",
+            "ageHours": 0.71316,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025590",
+        "name": "Osu Oxford Street",
+        "locality": null,
+        "coordinates": [
+          -0.18202,
+          5.55969
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:02:52Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 6.6,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:56:51Z",
+            "ageHours": 0.6476044444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025591",
+        "name": "Nima Market ",
+        "locality": null,
+        "coordinates": [
+          -0.19863,
+          5.58212
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:00:58Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 327.63,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T12:58:46Z",
+            "ageHours": 79.61566,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "3025592",
+        "name": "Kaneshie Market ",
+        "locality": null,
+        "coordinates": [
+          -0.23548,
+          5.56608
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:16:23Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 8.93,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:02:55Z",
+            "ageHours": 0.5464933333333334,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "3025593",
+        "name": "Kwame Nkrumah Circle",
+        "locality": null,
+        "coordinates": [
+          -0.21404,
+          5.56936
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Breathe Accra",
+        "firstSeen": "2024-08-20T17:16:26Z",
+        "attribution": "Breathe Accra",
+        "parameters": {
+          "pm25": {
+            "value": 40.84,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:56:51Z",
+            "ageHours": 0.6476044444444444,
+            "isStale": false
+          }
+        }
+      }
+    ],
+    "pm10": [
+      {
+        "id": "947129",
+        "name": "ARJWQ6WV",
+        "locality": null,
+        "coordinates": [
+          -0.18585528584023492,
+          5.651068809036082
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Unknown Community Organization",
+        "firstSeen": "2022-10-20T00:02:16Z",
+        "attribution": "Unknown Community Organization",
+        "parameters": {
+          "pm10": {
+            "value": 16.35,
+            "unit": "µg/m³",
+            "datetimeUtc": "2023-09-15T23:05:19Z",
+            "ageHours": 23565.511488333334,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "947145",
+        "name": "ANHLHLNJ",
+        "locality": null,
+        "coordinates": [
+          -0.18585528584023492,
+          5.651068809036082
+        ],
+        "quality": "low",
+        "provider": "Clarity",
+        "owner": "Unknown Community Organization",
+        "firstSeen": "2022-10-20T00:01:31Z",
+        "attribution": "Unknown Community Organization",
+        "parameters": {
+          "pm10": {
+            "value": 18.85,
+            "unit": "µg/m³",
+            "datetimeUtc": "2023-09-15T23:02:01Z",
+            "ageHours": 23565.566488333334,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "1236045",
+        "name": "Physics Department-UG-Accra/CAOA-UESD",
+        "locality": null,
+        "coordinates": [
+          -0.186,
+          5.651
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2023-07-15T13:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 45.13095219930013,
+            "unit": "µg/m³",
+            "datetimeUtc": "2025-01-13T23:00:00Z",
+            "ageHours": 11901.600099444444,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "2453497",
+        "name": "Afri-SET",
+        "locality": null,
+        "coordinates": [
+          -0.18587458123045222,
+          5.653842319123899
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Afri-SET",
+        "firstSeen": "2024-02-20T14:00:00Z",
+        "attribution": "Afri-SET",
+        "parameters": {
+          "pm10": {
+            "value": 19.409672498703003,
+            "unit": "µg/m³",
+            "datetimeUtc": "2024-03-09T19:00:00Z",
+            "ageHours": 19345.600099444444,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "2453500",
+        "name": "Afri-SET",
+        "locality": null,
+        "coordinates": [
+          -0.18587458123045222,
+          5.653842319123899
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Afri-SET",
+        "firstSeen": "2024-02-20T14:00:00Z",
+        "attribution": "Afri-SET",
+        "parameters": {
+          "pm10": {
+            "value": 49.09747060139974,
+            "unit": "µg/m³",
+            "datetimeUtc": "2025-01-13T23:00:00Z",
+            "ageHours": 11901.600099444444,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "2453501",
+        "name": "Afri-SET",
+        "locality": null,
+        "coordinates": [
+          -0.18587458123045222,
+          5.653842319123899
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "Afri-SET",
+        "firstSeen": "2024-02-20T14:00:00Z",
+        "attribution": "Afri-SET",
+        "parameters": {
+          "pm10": {
+            "value": 16.2894344329834,
+            "unit": "µg/m³",
+            "datetimeUtc": "2024-03-09T19:00:00Z",
+            "ageHours": 19345.600099444444,
+            "isStale": true
+          }
+        }
+      }
+    ]
+  }
+}

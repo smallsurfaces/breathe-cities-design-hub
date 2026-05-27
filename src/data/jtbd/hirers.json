@@ -1,0 +1,32 @@
+[
+  {
+    "id": "researcher-campaigner",
+    "name": "Researcher / Campaigner",
+    "cluster": "expert",
+    "subType": null
+  },
+  {
+    "id": "resident-direct",
+    "name": "Resident (direct)",
+    "cluster": "resident",
+    "subType": "direct"
+  },
+  {
+    "id": "resident-intermediary",
+    "name": "Resident (intermediary)",
+    "cluster": "resident",
+    "subType": "intermediary"
+  },
+  {
+    "id": "city-official-path-a",
+    "name": "City Official — Path A (service to residents)",
+    "cluster": "city",
+    "subType": "path-a"
+  },
+  {
+    "id": "city-official-path-b",
+    "name": "City Official — Path B (progress demonstration)",
+    "cluster": "city",
+    "subType": "path-b"
+  }
+]

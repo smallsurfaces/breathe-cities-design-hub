@@ -1,0 +1,906 @@
+{
+  "citySlug": "accra",
+  "cityName": "Accra",
+  "capturedAt": "2026-05-24T11:27:10.041Z",
+  "source": "OpenAQ v3 /locations (one-time snapshot; not fetched at page load)",
+  "center": [
+    -0.187,
+    5.604
+  ],
+  "zoom": 11,
+  "startYear": 2020,
+  "endYear": 2026,
+  "counts": {
+    "total": 83,
+    "reference": 10,
+    "lowCost": 73,
+    "firstSeenMissing": 9
+  },
+  "estimateNotes": {
+    "sensors": "Sensor positions + type (reference/low-cost) are real OpenAQ data. Per-sensor firstSeen year is real where OpenAQ provides datetimeFirst; sensors missing it are placed at the dataset median year (firstSeenEstimated=true). Sensor counts in real years are the true cumulative deployment; the pre-data runway years are a guesstimated growth ramp (timeline[].isEstimate=true).",
+    "districtsAndPeople": "Districts covered and people-in-range are DERIVED/GUESSTIMATED from the sensor count (no measured district or catchment dataset). They are calibrated so the present-day values match the curated programme figures; earlier years are modelled."
+  },
+  "sensors": [
+    {
+      "id": "3",
+      "name": "NMA - Nima",
+      "lng": -0.19968,
+      "lat": 5.58389,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "4",
+      "name": "NMT - Nima",
+      "lng": -0.19898,
+      "lat": 5.58165,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "5",
+      "name": "JTA - Jamestown",
+      "lng": -0.2103972,
+      "lat": 5.5401139,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "6",
+      "name": "ADT - Asylum Down",
+      "lng": -0.2120555,
+      "lat": 5.570722,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "7",
+      "name": "ADEPA - Asylum Down",
+      "lng": -0.2040278,
+      "lat": 5.567833,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "8",
+      "name": "ADA - Asylum Down",
+      "lng": -0.2077778,
+      "lat": 5.566722,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "9",
+      "name": "ELC - East Legon",
+      "lng": -0.1651875,
+      "lat": 5.6335571,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "10",
+      "name": "ELT - East Legon",
+      "lng": -0.1695437,
+      "lat": 5.6408995,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "11",
+      "name": "ELA - East Legon",
+      "lng": -0.1579063,
+      "lat": 5.6408137,
+      "type": "reference",
+      "firstSeenYear": 2026,
+      "firstSeen": null,
+      "firstSeenEstimated": true
+    },
+    {
+      "id": "9764",
+      "name": "US Diplomatic Post: Accra",
+      "lng": -0.170699,
+      "lat": 5.579447,
+      "type": "reference",
+      "firstSeenYear": 2020,
+      "firstSeen": "2020-05-01T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "947129",
+      "name": "ARJWQ6WV",
+      "lng": -0.18585528584023492,
+      "lat": 5.651068809036082,
+      "type": "low-cost",
+      "firstSeenYear": 2022,
+      "firstSeen": "2022-10-20T00:02:16Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "947145",
+      "name": "ANHLHLNJ",
+      "lng": -0.18585528584023492,
+      "lat": 5.651068809036082,
+      "type": "low-cost",
+      "firstSeenYear": 2022,
+      "firstSeen": "2022-10-20T00:01:31Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "1236045",
+      "name": "Physics Department-UG-Accra/CAOA-UESD",
+      "lng": -0.186,
+      "lat": 5.651,
+      "type": "low-cost",
+      "firstSeenYear": 2023,
+      "firstSeen": "2023-07-15T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "2453497",
+      "name": "Afri-SET",
+      "lng": -0.18587458123045222,
+      "lat": 5.653842319123899,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-02-20T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "2453500",
+      "name": "Afri-SET",
+      "lng": -0.18587458123045222,
+      "lat": 5.653842319123899,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-02-20T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "2453501",
+      "name": "Afri-SET",
+      "lng": -0.18587458123045222,
+      "lat": 5.653842319123899,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-02-20T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025580",
+      "name": "Dansoman Roundabout ",
+      "lng": -0.26448,
+      "lat": 5.55851,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:15:51Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025581",
+      "name": "Kwashieman Presby Church ",
+      "lng": -0.26877,
+      "lat": 5.59389,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:04:07Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025582",
+      "name": "West Hills Mall",
+      "lng": -0.34229,
+      "lat": 5.54579,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:02:44Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025583",
+      "name": "Ashaley Botwe School Junction",
+      "lng": -0.12412,
+      "lat": 5.67614,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:02:27Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025584",
+      "name": "37 Lorry Station ",
+      "lng": -0.17964,
+      "lat": 5.58892,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:03:20Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025585",
+      "name": "Graphic Road",
+      "lng": -0.22526,
+      "lat": 5.55895,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:11:21Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025586",
+      "name": "Lapaz Intersection ",
+      "lng": -0.24896,
+      "lat": 5.60724,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:02:29Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025587",
+      "name": "Madina Zongo Junction ",
+      "lng": -0.17295,
+      "lat": 5.6779,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:07:26Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025588",
+      "name": "Agbogbloshie ",
+      "lng": -0.21927,
+      "lat": 5.55147,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:04:57Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025589",
+      "name": "Makola ",
+      "lng": -0.2072,
+      "lat": 5.54848,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:05:29Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025590",
+      "name": "Osu Oxford Street",
+      "lng": -0.18202,
+      "lat": 5.55969,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:02:52Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025591",
+      "name": "Nima Market ",
+      "lng": -0.19863,
+      "lat": 5.58212,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:00:58Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025592",
+      "name": "Kaneshie Market ",
+      "lng": -0.23548,
+      "lat": 5.56608,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:16:23Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025593",
+      "name": "Kwame Nkrumah Circle",
+      "lng": -0.21404,
+      "lat": 5.56936,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:16:26Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3025594",
+      "name": "Tetteh Quarshie Interchange",
+      "lng": -0.17626,
+      "lat": 5.61919,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-08-20T17:15:28Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "3091472",
+      "name": "Amasaman ",
+      "lng": -0.29954,
+      "lat": 5.7031,
+      "type": "low-cost",
+      "firstSeenYear": 2024,
+      "firstSeen": "2024-10-03T18:03:45Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "4946349",
+      "name": "Tema Community 3 SSNIT Flat ",
+      "lng": -0.0237811,
+      "lat": 5.620955,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-03T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "4948390",
+      "name": "Tema Community 7, Royal School ",
+      "lng": -0.0090109,
+      "lat": 5.6643461,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-03T20:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "4958512",
+      "name": "Tema Community 25 Estate",
+      "lng": 0.0173341,
+      "lat": 5.7246506,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-04T17:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "4959010",
+      "name": "Satet International School, Tema Manhean",
+      "lng": 0.0274806,
+      "lat": 5.6602607,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-04T18:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "4959011",
+      "name": "Kpone Methodists School",
+      "lng": 0.0553638,
+      "lat": 5.6915154,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-04T18:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "4959012",
+      "name": "Tema Port",
+      "lng": 0.008879,
+      "lat": 5.634712,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-04T18:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "4967224",
+      "name": "Divine healer's Church, Bethlehem",
+      "lng": -0.0102789,
+      "lat": 5.7045807,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-05T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "5190170",
+      "name": "MSC_2Accra25",
+      "lng": -0.1969,
+      "lat": 5.556,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-07-24T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6092970",
+      "name": "Ashiaman Market Area ",
+      "lng": -0.02933,
+      "lat": 5.68844,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-10-12T19:00:52Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6092971",
+      "name": "Tema Community Center",
+      "lng": -0.26867,
+      "lat": 5.58864,
+      "type": "low-cost",
+      "firstSeenYear": 2025,
+      "firstSeen": "2025-10-12T19:03:39Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6235651",
+      "name": "Printex Junction, Spintex Rd",
+      "lng": -0.11971,
+      "lat": 5.64031,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-02-10T13:00:50Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6242085",
+      "name": "Aburi Town Center",
+      "lng": -0.17517,
+      "lat": 5.84408,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-02-16T12:08:18Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6297279",
+      "name": "Lartebiokorshie Cluster of Schools",
+      "lng": -0.23912,
+      "lat": 5.55418,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-05T18:14:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6297280",
+      "name": "Dzorwulu Fidelity Bank ",
+      "lng": -0.20476,
+      "lat": 5.61045,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-05T18:16:59Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6297281",
+      "name": "Mataheko PIWC",
+      "lng": -0.25041,
+      "lat": 5.57248,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-05T18:15:17Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6297282",
+      "name": "Okponglo Junction",
+      "lng": -0.17837,
+      "lat": 5.64055,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-05T18:16:06Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301615",
+      "name": "Tipper Junction Road, Oyarifa",
+      "lng": -0.17099,
+      "lat": 5.74927,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:14:19Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301616",
+      "name": "FOTS International School, Amrahia",
+      "lng": -0.13301,
+      "lat": 5.77016,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:12:42Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301617",
+      "name": "Spintex Road (China Marble Town)",
+      "lng": -0.12164,
+      "lat": 5.64031,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:01:20Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301618",
+      "name": "Aviation Road, Adenta",
+      "lng": -0.14808,
+      "lat": 5.68842,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:11:18Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301619",
+      "name": "Jungle Avenue, A & C Mall",
+      "lng": -0.15173,
+      "lat": 5.64213,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:05:34Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301620",
+      "name": "Adenta Commandos Last Stop",
+      "lng": -0.14471,
+      "lat": 5.73265,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:05:08Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301621",
+      "name": "Otinibi Last Stop",
+      "lng": -0.14913,
+      "lat": 5.7905,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:17:34Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6301622",
+      "name": "Pantang Hospital",
+      "lng": -0.18743,
+      "lat": 5.71444,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-09T10:15:52Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302787",
+      "name": "Darkuman Christian Complex School",
+      "lng": -0.25668,
+      "lat": 5.59022,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T10:05:03Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302788",
+      "name": "Dansoman Keep Fit Area",
+      "lng": -0.27591,
+      "lat": 5.5565,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T10:00:21Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302789",
+      "name": "Dansoman Market",
+      "lng": -0.26477,
+      "lat": 5.54243,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T10:17:35Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302790",
+      "name": "Dr. Busia Street, Sakaman",
+      "lng": -0.26578,
+      "lat": 5.57394,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T10:16:11Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302944",
+      "name": "Abeka Total Filling Station",
+      "lng": -0.23359,
+      "lat": 5.59794,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T13:25:55Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302945",
+      "name": "Achimota New Station",
+      "lng": -0.22561,
+      "lat": 5.62081,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T13:56:43Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302946",
+      "name": "Kotobabi Lorry Station",
+      "lng": -0.20919,
+      "lat": 5.59593,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T13:38:47Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302989",
+      "name": "Tesano Police Station",
+      "lng": -0.22563,
+      "lat": 5.60523,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T14:29:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6302990",
+      "name": "Dome Road, Christian Village",
+      "lng": -0.21662,
+      "lat": 5.63676,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T14:17:14Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6303239",
+      "name": "Alajo Market",
+      "lng": -0.21689,
+      "lat": 5.59122,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-10T18:24:48Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6309346",
+      "name": "Mallam Market",
+      "lng": -0.27891,
+      "lat": 5.57345,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-15T22:25:24Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6309347",
+      "name": "Mallam Atta Market ",
+      "lng": -0.20733,
+      "lat": 5.57956,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-15T22:07:39Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6309348",
+      "name": "New Town College",
+      "lng": -0.2083,
+      "lat": 5.58319,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-15T22:38:25Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6309349",
+      "name": "Flagstaff House Basic School",
+      "lng": -0.18587,
+      "lat": 5.58262,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-15T22:16:28Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6309350",
+      "name": "Mamobi General Hospital",
+      "lng": -0.19959,
+      "lat": 5.59187,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-15T22:32:41Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6309351",
+      "name": "Paloma Hotel, Ring Road Central",
+      "lng": -0.20362,
+      "lat": 5.57272,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-15T22:14:35Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6309352",
+      "name": "Kawukudi Community Youth Center",
+      "lng": -0.1862,
+      "lat": 5.59304,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-15T22:15:01Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6311173",
+      "name": "La Palm Royal Beach Hotel, Labadi",
+      "lng": -0.14292,
+      "lat": 5.56331,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-17T12:03:15Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6311211",
+      "name": "Krispat Hearing Center, Pig Farm",
+      "lng": -0.19711,
+      "lat": 5.59983,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-17T13:02:45Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6311212",
+      "name": "Burma Hills, Tse Addo",
+      "lng": -0.13944,
+      "lat": 5.60653,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-17T12:40:49Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6313991",
+      "name": "Black Star Square",
+      "lng": -0.19032,
+      "lat": 5.54955,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-19T20:09:27Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6313992",
+      "name": "Ridge Hospital",
+      "lng": -0.19886,
+      "lat": 5.56217,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-19T20:08:30Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6313993",
+      "name": "+233, North Ridge",
+      "lng": -0.19544,
+      "lat": 5.57375,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-19T20:04:07Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6322654",
+      "name": "Asylum Down",
+      "lng": -0.2057,
+      "lat": 5.56618,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-26T04:04:48Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6322655",
+      "name": "Cantonments",
+      "lng": -0.16675,
+      "lat": 5.58186,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-26T04:00:17Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6322656",
+      "name": "TED Academy, Banana Inn",
+      "lng": -0.25384,
+      "lat": 5.54201,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-04-26T04:15:31Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "6341624",
+      "name": "Accra New Town ",
+      "lng": -0.20746,
+      "lat": 5.58782,
+      "type": "low-cost",
+      "firstSeenYear": 2026,
+      "firstSeen": "2026-05-09T11:36:35Z",
+      "firstSeenEstimated": false
+    }
+  ],
+  "timeline": [
+    {
+      "year": 2020,
+      "sensorCount": 1,
+      "districtsCovered": 1,
+      "peopleInRange": 92308,
+      "isEstimate": false
+    },
+    {
+      "year": 2021,
+      "sensorCount": 1,
+      "districtsCovered": 1,
+      "peopleInRange": 92308,
+      "isEstimate": false
+    },
+    {
+      "year": 2022,
+      "sensorCount": 3,
+      "districtsCovered": 1,
+      "peopleInRange": 92308,
+      "isEstimate": false
+    },
+    {
+      "year": 2023,
+      "sensorCount": 4,
+      "districtsCovered": 1,
+      "peopleInRange": 92308,
+      "isEstimate": false
+    },
+    {
+      "year": 2024,
+      "sensorCount": 23,
+      "districtsCovered": 7,
+      "peopleInRange": 646154,
+      "isEstimate": false
+    },
+    {
+      "year": 2025,
+      "sensorCount": 33,
+      "districtsCovered": 9,
+      "peopleInRange": 830769,
+      "isEstimate": false
+    },
+    {
+      "year": 2026,
+      "sensorCount": 83,
+      "districtsCovered": 13,
+      "peopleInRange": 1200000,
+      "isEstimate": false
+    }
+  ]
+}

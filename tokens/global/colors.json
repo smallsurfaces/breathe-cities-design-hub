@@ -1,0 +1,35 @@
+{
+  "color": {
+    "white":      { "$value": "#ffffff",  "$type": "color", "$description": "Base white" },
+    "darkBlue":   { "$value": "#003574",  "$type": "color", "$description": "Primary dark blue — main text and headers" },
+    "blue":       { "$value": "#0071c7",  "$type": "color", "$description": "Brand blue — primary buttons and links" },
+    "lightBlue":  { "$value": "#23bced",  "$type": "color", "$description": "Light blue — hover states" },
+    "teal":       { "$value": "#2BCDB0",  "$type": "color", "$description": "Teal — secondary accent" },
+    "lightTeal":  { "$value": "#BAF0E6",  "$type": "color", "$description": "Light teal — backgrounds and highlights" },
+    "green":      { "$value": "#03ab3d",  "$type": "color", "$description": "Green — success states" },
+    "tangerine":  { "$value": "#f55200",  "$type": "color", "$description": "Tangerine/orange — error states and CTAs" },
+    "yellow":     { "$value": "#e8f000",  "$type": "color", "$description": "Yellow — highlight accent" },
+    "lightGrey":  { "$value": "#f3f8fe",  "$type": "color", "$description": "Light grey — borders and subtle backgrounds" },
+    "steel":      { "$value": "#b2c2d5",  "$type": "color", "$description": "Steel blue — muted elements" },
+    "darkBlueDim":{ "$value": "#002a5b",  "$type": "color", "$description": "Darker blue variant — deep backgrounds" },
+
+    "amber":       { "$value": "#C68400",  "$type": "color", "$description": "AQI moderate indicator" },
+    "amberWarm":   { "$value": "#e8a000",  "$type": "color", "$description": "Lighter warm amber — map zone overlays only" },
+    "orange":      { "$value": "#E8720C",  "$type": "color", "$description": "AQI unhealthy indicator" },
+    "red":         { "$value": "#D32F2F",  "$type": "color", "$description": "AQI very unhealthy indicator" },
+    "purple":      { "$value": "#7B3FA0",  "$type": "color", "$description": "AQI hazardous indicator" },
+    "maroon":      { "$value": "#8B0000",  "$type": "color", "$description": "AQI extreme indicator" },
+    "greenLight":  { "$value": "#E6F9ED",  "$type": "color", "$description": "AQI good background" },
+    "greenDark":   { "$value": "#016B26",  "$type": "color", "$description": "AQI good text" },
+    "amberLight":  { "$value": "#FFF3D6",  "$type": "color", "$description": "AQI moderate background" },
+    "amberDark":   { "$value": "#7A5000",  "$type": "color", "$description": "AQI moderate text" },
+    "orangeLight": { "$value": "#FDEEE3",  "$type": "color", "$description": "AQI unhealthy background" },
+    "orangeDark":  { "$value": "#7A3200",  "$type": "color", "$description": "AQI unhealthy text" },
+    "redLight":    { "$value": "#FDEAEA",  "$type": "color", "$description": "AQI very unhealthy background" },
+    "redDark":     { "$value": "#7A1010",  "$type": "color", "$description": "AQI very unhealthy text" },
+    "purpleLight": { "$value": "#F3E8FB",  "$type": "color", "$description": "AQI hazardous background" },
+    "purpleDark":  { "$value": "#4A1F66",  "$type": "color", "$description": "AQI hazardous text" },
+    "maroonLight": { "$value": "#F5E6E6",  "$type": "color", "$description": "AQI extreme background" },
+    "maroonDark":  { "$value": "#5C0000",  "$type": "color", "$description": "AQI extreme text" }
+  }
+}

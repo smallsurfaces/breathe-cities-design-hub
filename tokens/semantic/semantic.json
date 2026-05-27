@@ -1,0 +1,44 @@
+{
+  "semantic": {
+    "bg":       { "$value": "{color.white}",      "$type": "color", "$description": "Page background" },
+    "text":     { "$value": "{color.darkBlue}",   "$type": "color", "$description": "Primary text colour" },
+    "brand":    { "$value": "{color.blue}",        "$type": "color", "$description": "Brand colour — primary buttons, links" },
+    "accent":   { "$value": "{color.darkBlue}",   "$type": "color", "$description": "Accent — partner sections, highlights" },
+    "hover":    { "$value": "{color.lightBlue}",  "$type": "color", "$description": "Interactive hover state" },
+    "border":   { "$value": "{color.lightGrey}",  "$type": "color", "$description": "Subtle borders and dividers" },
+    "error":    { "$value": "{color.tangerine}",  "$type": "color", "$description": "Error and destructive states" },
+    "success":  { "$value": "{color.green}",      "$type": "color", "$description": "Success and positive states" },
+    "muted":    { "$value": "{color.steel}",      "$type": "color", "$description": "Muted/secondary text" },
+
+    "aqi": {
+      "goodIndicator":         { "$value": "{color.green}",       "$type": "color", "$description": "AQI good — indicator colour" },
+      "moderateIndicator":     { "$value": "{color.amber}",       "$type": "color", "$description": "AQI moderate — indicator colour" },
+      "unhealthyIndicator":    { "$value": "{color.orange}",      "$type": "color", "$description": "AQI unhealthy — indicator colour" },
+      "veryUnhealthyIndicator":{ "$value": "{color.red}",         "$type": "color", "$description": "AQI very unhealthy — indicator colour" },
+      "hazardousIndicator":    { "$value": "{color.purple}",      "$type": "color", "$description": "AQI hazardous — indicator colour" },
+      "extremeIndicator":      { "$value": "{color.maroon}",      "$type": "color", "$description": "AQI extreme — indicator colour" },
+
+      "goodBg":                { "$value": "{color.greenLight}",  "$type": "color", "$description": "AQI good — background" },
+      "moderateBg":            { "$value": "{color.amberLight}",  "$type": "color", "$description": "AQI moderate — background" },
+      "unhealthyBg":           { "$value": "{color.orangeLight}", "$type": "color", "$description": "AQI unhealthy — background" },
+      "veryUnhealthyBg":       { "$value": "{color.redLight}",    "$type": "color", "$description": "AQI very unhealthy — background" },
+      "hazardousBg":           { "$value": "{color.purpleLight}", "$type": "color", "$description": "AQI hazardous — background" },
+      "extremeBg":             { "$value": "{color.maroonLight}", "$type": "color", "$description": "AQI extreme — background" },
+
+      "goodText":              { "$value": "{color.greenDark}",   "$type": "color", "$description": "AQI good — text colour" },
+      "moderateText":          { "$value": "{color.amberDark}",   "$type": "color", "$description": "AQI moderate — text colour" },
+      "unhealthyText":         { "$value": "{color.orangeDark}",  "$type": "color", "$description": "AQI unhealthy — text colour" },
+      "veryUnhealthyText":     { "$value": "{color.redDark}",     "$type": "color", "$description": "AQI very unhealthy — text colour" },
+      "hazardousText":         { "$value": "{color.purpleDark}",  "$type": "color", "$description": "AQI hazardous — text colour" },
+      "extremeText":           { "$value": "{color.maroonDark}",  "$type": "color", "$description": "AQI extreme — text colour" }
+    },
+
+    "map": {
+      "grid":     { "$value": "rgba(178, 194, 213, 0.18)", "$type": "color", "$description": "Map grid lines — steel at 18% opacity" },
+      "zoneGood": { "$value": "rgba(3, 171, 61, 0.13)",   "$type": "color", "$description": "Map zone overlay — good AQI at 13% opacity" },
+      "zoneMod":  { "$value": "rgba(232, 160, 0, 0.14)",  "$type": "color", "$description": "Map zone overlay — moderate AQI at 14% opacity (amberWarm-based)" },
+      "road":     { "$value": "rgba(178, 194, 213, 0.45)", "$type": "color", "$description": "Map road lines — steel at 45% opacity" },
+      "overlay":  { "$value": "rgba(255, 255, 255, 0.88)", "$type": "color", "$description": "Map UI overlay — white at 88% opacity" }
+    }
+  }
+}

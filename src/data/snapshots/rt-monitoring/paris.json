@@ -1,0 +1,608 @@
+{
+  "city": "paris",
+  "capturedAt": "2026-05-24T20:35:39.444Z",
+  "parameters": {
+    "pm25": [
+      {
+        "id": "4039",
+        "name": "PARIS 18eme",
+        "locality": "PARIS 18E ARRONDISSEMENT",
+        "coordinates": [
+          2.346666999987613,
+          48.891665999897555
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 3.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.6184313888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4041",
+        "name": "Bld peripherique Est",
+        "locality": "PARIS 12E ARRONDISSEMENT",
+        "coordinates": [
+          2.4127809998590957,
+          48.83861500018727
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 8.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.6184313888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4066",
+        "name": "BOBIGNY",
+        "locality": "BOBIGNY",
+        "coordinates": [
+          2.452500000264972,
+          48.9025040001429
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 13,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T18:00:00Z",
+            "ageHours": 2.618431388888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "4069",
+        "name": "Av Champs Elysees",
+        "locality": "PARIS 8E ARRONDISSEMENT",
+        "coordinates": [
+          2.3119439997973035,
+          48.86888999991671
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2023-05-06T00:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 16,
+            "unit": "µg/m³",
+            "datetimeUtc": "2024-07-30T07:00:00Z",
+            "ageHours": 15925.618431388888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4070",
+        "name": "Boulevard Haussmann",
+        "locality": "PARIS 9E ARRONDISSEMENT",
+        "coordinates": [
+          2.3302780002985286,
+          48.873333000004415
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 8.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.6184313888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4075",
+        "name": "LA DEFENSE",
+        "locality": "PUTEAUX",
+        "coordinates": [
+          2.2405559998759084,
+          48.8913880002415
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 7.7,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T18:00:00Z",
+            "ageHours": 2.618431388888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "4146",
+        "name": "PARIS Centre",
+        "locality": null,
+        "coordinates": [
+          2.350998896374882,
+          48.85899751049642
+        ],
+        "quality": "high",
+        "provider": "EEA France",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 7.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2019-09-23T08:00:00Z",
+            "ageHours": 58452.61843138889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "5681",
+        "name": "FR04143",
+        "locality": null,
+        "coordinates": [
+          2.351111,
+          48.8594439994682
+        ],
+        "quality": "high",
+        "provider": "EEA France",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2017-09-22T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 15.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2018-04-25T00:00:00Z",
+            "ageHours": 70844.6184313889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "2162591",
+        "name": "PARIS 1er Les Halles",
+        "locality": "PARIS 1ER ARRONDISSEMENT",
+        "coordinates": [
+          2.344615999768577,
+          48.86211999987271
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2024-01-28T23:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 9.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T18:00:00Z",
+            "ageHours": 2.618431388888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2995837",
+        "name": "Av Champs Elysees",
+        "locality": "PARIS 8E ARRONDISSEMENT",
+        "coordinates": [
+          2.3112309997697755,
+          48.86877000026755
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2024-07-27T11:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 11.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.6184313888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4313237",
+        "name": "Pont de Grenelle",
+        "locality": null,
+        "coordinates": [
+          2.27918,
+          48.85017
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "JerryMcC",
+        "firstSeen": "2025-09-19T00:00:00Z",
+        "attribution": "JerryMcC",
+        "parameters": {
+          "pm25": {
+            "value": 11.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.6184313888888888,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "6169727",
+        "name": "80 Boulevard Garibaldi, Paris 75015 France",
+        "locality": null,
+        "coordinates": [
+          2.30883,
+          48.84558
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "AirGradient",
+        "firstSeen": "2025-12-18T22:00:00Z",
+        "attribution": "AirGradient",
+        "parameters": {
+          "pm25": {
+            "value": 7.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.6184313888888888,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "6216239",
+        "name": "IFPEN Rueil 2",
+        "locality": null,
+        "coordinates": [
+          2.3210560856175313,
+          48.88538539460946
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "AirGradient",
+        "firstSeen": "2026-01-26T13:00:00Z",
+        "attribution": "AirGradient",
+        "parameters": {
+          "pm25": {
+            "value": 6.1,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-04-28T04:00:00Z",
+            "ageHours": 640.6184313888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "6308656",
+        "name": "Avenue Parmentier",
+        "locality": null,
+        "coordinates": [
+          2.37565,
+          48.8638458
+        ],
+        "quality": "low",
+        "provider": "AirGradient",
+        "owner": "AirGradient",
+        "firstSeen": "2026-04-15T07:00:00Z",
+        "attribution": "AirGradient",
+        "parameters": {
+          "pm25": {
+            "value": 6.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.6184313888888888,
+            "isStale": false
+          }
+        }
+      }
+    ],
+    "pm10": [
+      {
+        "id": "2681",
+        "name": "Place de l'Opéra",
+        "locality": "PARIS 2E ARRONDISSEMENT",
+        "coordinates": [
+          2.332500000221789,
+          48.8702740002815
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 22,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.62308916666667,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4039",
+        "name": "PARIS 18eme",
+        "locality": "PARIS 18E ARRONDISSEMENT",
+        "coordinates": [
+          2.346666999987613,
+          48.891665999897555
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 19.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.62308916666667,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4041",
+        "name": "Bld peripherique Est",
+        "locality": "PARIS 12E ARRONDISSEMENT",
+        "coordinates": [
+          2.4127809998590957,
+          48.83861500018727
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 26.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.62308916666667,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4053",
+        "name": "RN2-PANTIN",
+        "locality": "PANTIN",
+        "coordinates": [
+          2.390832999714743,
+          48.90221999982184
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 31.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2025-10-29T09:00:00Z",
+            "ageHours": 4979.623089166666,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4060",
+        "name": "PARIS Stade Lenglen",
+        "locality": "PARIS 15E ARRONDISSEMENT",
+        "coordinates": [
+          2.2698889996653513,
+          48.830386999745706
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2017-02-18T08:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 22.1,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T18:00:00Z",
+            "ageHours": 2.6230891666666665,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "4066",
+        "name": "BOBIGNY",
+        "locality": "BOBIGNY",
+        "coordinates": [
+          2.452500000264972,
+          48.9025040001429
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 26.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T18:00:00Z",
+            "ageHours": 2.6230891666666665,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "4067",
+        "name": "Place Victor Basch",
+        "locality": "PARIS 14E ARRONDISSEMENT",
+        "coordinates": [
+          2.327499999808262,
+          48.82777799979369
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 24.1,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.62308916666667,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4070",
+        "name": "Boulevard Haussmann",
+        "locality": "PARIS 9E ARRONDISSEMENT",
+        "coordinates": [
+          2.3302780002985286,
+          48.873333000004415
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 21.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T19:00:00Z",
+            "ageHours": 73.62308916666667,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4075",
+        "name": "LA DEFENSE",
+        "locality": "PUTEAUX",
+        "coordinates": [
+          2.2405559998759084,
+          48.8913880002415
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 8.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-12-31T13:00:00Z",
+            "ageHours": 47287.623089166664,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "4146",
+        "name": "PARIS Centre",
+        "locality": null,
+        "coordinates": [
+          2.350998896374882,
+          48.85899751049642
+        ],
+        "quality": "high",
+        "provider": "EEA France",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-11-21T12:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 14.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2019-09-23T08:00:00Z",
+            "ageHours": 58452.623089166664,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "5681",
+        "name": "FR04143",
+        "locality": null,
+        "coordinates": [
+          2.351111,
+          48.8594439994682
+        ],
+        "quality": "high",
+        "provider": "EEA France",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2017-09-22T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 23.65,
+            "unit": "µg/m³",
+            "datetimeUtc": "2018-04-25T00:00:00Z",
+            "ageHours": 70844.62308916666,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "2162591",
+        "name": "PARIS 1er Les Halles",
+        "locality": "PARIS 1ER ARRONDISSEMENT",
+        "coordinates": [
+          2.344615999768577,
+          48.86211999987271
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2024-01-28T23:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 31.9,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T18:00:00Z",
+            "ageHours": 2.6230891666666665,
+            "isStale": false
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,953 @@
+{
+  "city": "london",
+  "capturedAt": "2026-05-24T20:35:39.444Z",
+  "parameters": {
+    "pm25": [
+      {
+        "id": "60",
+        "name": "Haringey Roadside - UKA00260",
+        "locality": "Haringey",
+        "coordinates": [
+          -0.06821799979396657,
+          51.59929999967941
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 10,
+            "unit": "µg/m³",
+            "datetimeUtc": "2016-02-09T20:00:00Z",
+            "ageHours": 90168.62768888888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "137",
+        "name": "Harrow - Stanmore",
+        "locality": "Harrow",
+        "coordinates": [
+          -0.298775,
+          51.617327
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 11,
+            "unit": "µg/m³",
+            "datetimeUtc": "2017-04-28T11:00:00Z",
+            "ageHours": 79521.62768888888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "141",
+        "name": "London Harlington - UKA00472",
+        "locality": "London",
+        "coordinates": [
+          -0.44161399993549455,
+          51.48878999962389
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-28T21:00:00Z",
+            "ageHours": 1367.627688888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "146",
+        "name": "Southwark A2 Old Kent Road - UKA00558",
+        "locality": "Southwark",
+        "coordinates": [
+          -0.059550000208953166,
+          51.4804989994662
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 5.1,
+            "unit": "µg/m³",
+            "datetimeUtc": "2025-03-31T12:00:00Z",
+            "ageHours": 10064.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "147",
+        "name": "Greenwich - Eltham",
+        "locality": "Greenwich",
+        "coordinates": [
+          0.070766,
+          51.45258
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-02-01T11:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2023-07-04T16:00:00Z",
+            "ageHours": 25324.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "148",
+        "name": "London Bloomsbury - UKA00211",
+        "locality": "Camden",
+        "coordinates": [
+          -0.12588900021133392,
+          51.52228999923011
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 7.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T23:00:00Z",
+            "ageHours": 69.62768888888888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "150",
+        "name": "London Haringey Priory Park South - UKA00568",
+        "locality": "London",
+        "coordinates": [
+          -0.1252540000016108,
+          51.58412799971813
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.627688888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "151",
+        "name": "Tower Hamlets - Mile End Road",
+        "locality": "Tower Hamlets",
+        "coordinates": [
+          -0.0421550991900347,
+          51.5225294860844
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-02-05T17:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 26,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.627688888888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "152",
+        "name": "Camden Kerbside - UKA00259",
+        "locality": "Camden",
+        "coordinates": [
+          -0.17526899971392015,
+          51.54420999974351
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 12,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T23:00:00Z",
+            "ageHours": 69.62768888888888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "153",
+        "name": "London Hillingdon - UKA00266",
+        "locality": "London",
+        "coordinates": [
+          -0.4608609995824734,
+          51.49632999971629
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.627688888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "154",
+        "name": "London Marylebone Road - UKA00315",
+        "locality": "Westminster",
+        "coordinates": [
+          -0.15461100008049963,
+          51.52252999942243
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 9,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-04-30T04:00:00Z",
+            "ageHours": 592.6276888888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "155",
+        "name": "London N. Kensington - UKA00253",
+        "locality": "Kensington and Chelsea",
+        "coordinates": [
+          -0.21349199974454106,
+          51.52104999941992
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 7.5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T23:00:00Z",
+            "ageHours": 69.62768888888888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "157",
+        "name": "Bexley - Slade Green Fidas",
+        "locality": "Bexley",
+        "coordinates": [
+          0.184877126994369,
+          51.4659832746662
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 9.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T04:00:00Z",
+            "ageHours": 16.62768888888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "158",
+        "name": "London Teddington Bushy Park - UKA00572",
+        "locality": "London",
+        "coordinates": [
+          -0.3456059996846904,
+          51.425285999344624
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.627688888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "159",
+        "name": "London Westminster - UKA00435",
+        "locality": "London",
+        "coordinates": [
+          -0.13193099964204494,
+          51.4946699996591
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T02:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 12.8,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.627688888888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2395",
+        "name": "Thurrock - UKA00272",
+        "locality": "London",
+        "coordinates": [
+          0.31796900028704406,
+          51.47706999922149
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-02-27T21:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm25": {
+            "value": 5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.627688888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "61486",
+        "name": "Google Street View Car",
+        "locality": "London",
+        "coordinates": [
+          -0.15036661820359595,
+          51.503634709156785
+        ],
+        "quality": "high",
+        "provider": "london mobile",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2018-08-17T10:11:41Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 29.7869,
+            "unit": "µg/m³",
+            "datetimeUtc": "2019-10-31T16:14:51Z",
+            "ageHours": 57532.38018888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "61487",
+        "name": "Google Street View Car",
+        "locality": "London",
+        "coordinates": [
+          -0.16491291569562416,
+          51.50225232682155
+        ],
+        "quality": "high",
+        "provider": "london mobile",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2018-08-20T13:03:05Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 10.42832,
+            "unit": "µg/m³",
+            "datetimeUtc": "2019-10-28T20:12:27Z",
+            "ageHours": 57600.420188888886,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223687",
+        "name": "Black Horse Court",
+        "locality": null,
+        "coordinates": [
+          -0.088226,
+          51.496482
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2018-12-13T18:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 5.53,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-12-01T00:00:00Z",
+            "ageHours": 48020.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223689",
+        "name": "Holloway Bus Garage",
+        "locality": null,
+        "coordinates": [
+          -0.132947,
+          51.561917
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2018-10-10T12:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 2.13,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-05-31T20:00:00Z",
+            "ageHours": 52416.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223690",
+        "name": "Parkside",
+        "locality": null,
+        "coordinates": [
+          -0.222013,
+          51.426126
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2019-02-06T14:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 7.99,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-09-17T16:00:00Z",
+            "ageHours": 49804.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223691",
+        "name": "West Smithsfield",
+        "locality": null,
+        "coordinates": [
+          -0.100905,
+          51.518921
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2018-10-11T11:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 4.5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-12-01T00:00:00Z",
+            "ageHours": 48020.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223692",
+        "name": "Brook Drive",
+        "locality": null,
+        "coordinates": [
+          -0.101559,
+          51.493213
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2019-05-02T13:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 3.6,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-12-01T00:00:00Z",
+            "ageHours": 48020.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223693",
+        "name": "Grahame Park Way",
+        "locality": null,
+        "coordinates": [
+          -0.246172,
+          51.608918
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2019-07-09T13:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 2.78,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-12-01T00:00:00Z",
+            "ageHours": 48020.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223694",
+        "name": "Cecilia Road",
+        "locality": null,
+        "coordinates": [
+          -0.06836,
+          51.54989
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2018-10-30T17:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 7.87,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-10-02T06:00:00Z",
+            "ageHours": 49454.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223696",
+        "name": "St John's Upper Holloway CE Primary School",
+        "locality": null,
+        "coordinates": [
+          -0.132866,
+          51.5625154
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2019-07-17T13:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 5.33,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-12-01T00:00:00Z",
+            "ageHours": 48020.62768888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "223702",
+        "name": "Durham Street",
+        "locality": null,
+        "coordinates": [
+          -0.11909,
+          51.485597
+        ],
+        "quality": "high",
+        "provider": "london stationary",
+        "owner": "Unknown Research Organization",
+        "firstSeen": "2018-10-25T12:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 36.78,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-11-19T09:00:00Z",
+            "ageHours": 48299.62768888889,
+            "isStale": true
+          }
+        }
+      }
+    ],
+    "pm10": [
+      {
+        "id": "137",
+        "name": "Harrow - Stanmore",
+        "locality": "Harrow",
+        "coordinates": [
+          -0.298775,
+          51.617327
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 38.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2023-06-12T14:00:00Z",
+            "ageHours": 25854.63369638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "141",
+        "name": "London Harlington - UKA00472",
+        "locality": "London",
+        "coordinates": [
+          -0.44161399993549455,
+          51.48878999962389
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 11,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-28T21:00:00Z",
+            "ageHours": 1367.633696388889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "146",
+        "name": "Southwark A2 Old Kent Road - UKA00558",
+        "locality": "Southwark",
+        "coordinates": [
+          -0.059550000208953166,
+          51.4804989994662
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 23,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T23:00:00Z",
+            "ageHours": 69.6336963888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "147",
+        "name": "Greenwich - Eltham",
+        "locality": "Greenwich",
+        "coordinates": [
+          0.070766,
+          51.45258
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-02-01T11:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 9,
+            "unit": "µg/m³",
+            "datetimeUtc": "2023-07-04T16:00:00Z",
+            "ageHours": 25324.63369638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "148",
+        "name": "Camden - Bloomsbury",
+        "locality": "Camden",
+        "coordinates": [
+          -0.125848,
+          51.52228699999999
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 10.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T23:00:00Z",
+            "ageHours": 69.6336963888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "149",
+        "name": "Ealing Horn Lane",
+        "locality": "London",
+        "coordinates": [
+          -0.265617,
+          51.51895
+        ],
+        "quality": "high",
+        "provider": "DEFRA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 20,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.633696388889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "150",
+        "name": "London Haringey Priory Park South - UKA00568",
+        "locality": "London",
+        "coordinates": [
+          -0.1252540000016108,
+          51.58412799971813
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 10,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.633696388889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "152",
+        "name": "Camden - Swiss Cottage",
+        "locality": "Camden",
+        "coordinates": [
+          -0.175284,
+          51.544219
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 15.5,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T23:00:00Z",
+            "ageHours": 69.6336963888889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "153",
+        "name": "London Hillingdon - UKA00266",
+        "locality": "London",
+        "coordinates": [
+          -0.4608609995824734,
+          51.49632999971629
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 11,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.633696388889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "154",
+        "name": "London Marylebone Road - UKA00315",
+        "locality": "Westminster",
+        "coordinates": [
+          -0.15461100008049963,
+          51.52252999942243
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 14,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.633696388889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "155",
+        "name": "Kensington and Chelsea - North Ken",
+        "locality": "Kensington and Chelsea",
+        "coordinates": [
+          -0.213492139585065,
+          51.5210467476039
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 9,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.633696388889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "157",
+        "name": "Bexley - Slade Green",
+        "locality": "Bexley",
+        "coordinates": [
+          0.184877126994369,
+          51.4659832746662
+        ],
+        "quality": "high",
+        "provider": "London Air Quality Network",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 22.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.633696388888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "158",
+        "name": "London Teddington Bushy Park - UKA00572",
+        "locality": "London",
+        "coordinates": [
+          -0.3456059996846904,
+          51.425285999344624
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 32.8,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.633696388888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2395",
+        "name": "Thurrock - UKA00272",
+        "locality": "London",
+        "coordinates": [
+          0.31796900028704406,
+          51.47706999922149
+        ],
+        "quality": "high",
+        "provider": "EEA",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-02-27T21:00:00Z",
+        "attribution": "Unknown Governmental Organization",
+        "parameters": {
+          "pm10": {
+            "value": 11,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-03-29T00:00:00Z",
+            "ageHours": 1364.633696388889,
+            "isStale": true
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+[build]
+  command   = "npm run build"
+  publish   = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Security response headers now live in next.config.ts (async headers()), NOT here.
+# Reason: this is a Next.js runtime (server) deploy — netlify.toml [[headers]] only
+# cover static CDN assets (/_next/static/*), not SSR/runtime page responses. The
+# Next runtime applies headers() to all routes (SSR included). CSP is Report-Only
+# there pending live verification.

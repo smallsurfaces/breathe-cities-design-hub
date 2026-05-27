@@ -1,0 +1,23 @@
+{
+  "$metadata": {
+    "tokenSetOrder": [
+      "global/colors",
+      "global/typography",
+      "global/spacing",
+      "global/border-radius",
+      "global/effects",
+      "semantic/semantic"
+    ]
+  },
+  "source": "github",
+  "syncProviders": [
+    {
+      "provider": "github",
+      "id": "breath-city-tokens",
+      "repositoryId": "breath-city-test",
+      "branch": "main",
+      "filePath": "tokens",
+      "baseUrl": ""
+    }
+  ]
+}

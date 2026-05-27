@@ -1,0 +1,13 @@
+{
+  "shadow": {
+    "none": { "$value": "none",                                                                         "$type": "shadow", "$description": "Flat design — no shadow (default)" },
+    "sm":   { "$value": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",             "$type": "shadow", "$description": "Subtle shadow — focus/hover lift" },
+    "md":   { "$value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",          "$type": "shadow", "$description": "Medium shadow" },
+    "lg":   { "$value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",        "$type": "shadow", "$description": "Large shadow" }
+  },
+  "transition": {
+    "fast":    { "$value": "200ms ease-in-out",             "$type": "other", "$description": "Fast — button hover, colour changes" },
+    "medium":  { "$value": "300ms ease-in-out",             "$type": "other", "$description": "Medium — border, opacity" },
+    "slow":    { "$value": "450ms cubic-bezier(0.19,1,0.22,1)", "$type": "other", "$description": "Slow — scroll animations, carousels" }
+  }
+}

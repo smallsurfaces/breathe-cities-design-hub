@@ -1,0 +1,1104 @@
+{
+  "citySlug": "london",
+  "cityName": "London",
+  "capturedAt": "2026-05-24T14:06:24.458Z",
+  "source": "OpenAQ v3 /locations (one-time snapshot; not fetched at page load)",
+  "center": [
+    -0.118,
+    51.509
+  ],
+  "zoom": 10.5,
+  "startYear": 2016,
+  "endYear": 2026,
+  "counts": {
+    "total": 100,
+    "reference": 100,
+    "lowCost": 0,
+    "firstSeenMissing": 0
+  },
+  "estimateNotes": {
+    "sensors": "Sensor positions + type (reference/low-cost) are real OpenAQ data. Per-sensor firstSeen year is real where OpenAQ provides datetimeFirst; sensors missing it are placed at the dataset median year (firstSeenEstimated=true). Sensor counts in real years are the true cumulative deployment; the pre-data runway years are a guesstimated growth ramp (timeline[].isEstimate=true).",
+    "districtsAndPeople": "Districts covered and people-in-range are DERIVED/GUESSTIMATED from the sensor count (no measured district or catchment dataset). They are calibrated so the present-day values match the curated programme figures; earlier years are modelled."
+  },
+  "sensors": [
+    {
+      "id": "60",
+      "name": "Haringey - Haringey Town Hall",
+      "lng": -0.068218,
+      "lat": 51.599302,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "137",
+      "name": "Harrow - Stanmore",
+      "lng": -0.298775,
+      "lat": 51.617327,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "141",
+      "name": "London Harlington - UKA00472",
+      "lng": -0.44161399993549455,
+      "lat": 51.48878999962389,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "146",
+      "name": "Southwark - A2 Old Kent Road",
+      "lng": -0.0595528932573422,
+      "lat": 51.4804994936467,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "147",
+      "name": "Greenwich - Eltham",
+      "lng": 0.070766,
+      "lat": 51.45258,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-02-01T11:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "148",
+      "name": "Camden - Bloomsbury",
+      "lng": -0.125848,
+      "lat": 51.52228699999999,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "149",
+      "name": "Ealing Horn Lane",
+      "lng": -0.265617,
+      "lat": 51.51895,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "150",
+      "name": "London Haringey Priory Park South - UKA00568",
+      "lng": -0.1252540000016108,
+      "lat": 51.58412799971813,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "151",
+      "name": "Tower Hamlets - Mile End Road",
+      "lng": -0.0421550991900347,
+      "lat": 51.5225294860844,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-02-05T17:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "152",
+      "name": "Camden - Swiss Cottage",
+      "lng": -0.175284,
+      "lat": 51.544219,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "153",
+      "name": "London Hillingdon - UKA00266",
+      "lng": -0.4608609995824734,
+      "lat": 51.49632999971629,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "154",
+      "name": "London Marylebone Road - UKA00315",
+      "lng": -0.15461100008049963,
+      "lat": 51.52252999942243,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "155",
+      "name": "Kensington and Chelsea - North Ken",
+      "lng": -0.213492139585065,
+      "lat": 51.5210467476039,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "156",
+      "name": "London Teddington",
+      "lng": -0.339647,
+      "lat": 51.42099,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "157",
+      "name": "Bexley - Slade Green Fidas",
+      "lng": 0.184877126994369,
+      "lat": 51.4659832746662,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "158",
+      "name": "London Teddington Bushy Park - UKA00572",
+      "lng": -0.3456059996846904,
+      "lat": 51.425285999344624,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "159",
+      "name": "London Westminster - UKA00435",
+      "lng": -0.13193099964204494,
+      "lat": 51.4946699996591,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-01-30T02:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "2395",
+      "name": "Thurrock - UKA00272",
+      "lng": 0.31796900028704406,
+      "lat": 51.47706999922149,
+      "type": "reference",
+      "firstSeenYear": 2016,
+      "firstSeen": "2016-02-27T21:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "61486",
+      "name": "Google Street View Car",
+      "lng": -0.15036661820359595,
+      "lat": 51.503634709156785,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-08-17T10:11:41Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "61487",
+      "name": "Google Street View Car",
+      "lng": -0.16491291569562416,
+      "lat": 51.50225232682155,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-08-20T13:03:05Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223686",
+      "name": "Brook Drive",
+      "lng": -0.101559,
+      "lat": 51.493213,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-24T21:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223687",
+      "name": "Black Horse Court",
+      "lng": -0.088226,
+      "lat": 51.496482,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-12-13T18:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223688",
+      "name": "Greenhill Way",
+      "lng": -0.341502,
+      "lat": 51.58092,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-23T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223689",
+      "name": "Holloway Bus Garage",
+      "lng": -0.132947,
+      "lat": 51.561917,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-10T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223690",
+      "name": "Parkside",
+      "lng": -0.222013,
+      "lat": 51.426126,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-02-06T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223691",
+      "name": "West Smithsfield",
+      "lng": -0.100905,
+      "lat": 51.518921,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-11T11:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223692",
+      "name": "Brook Drive",
+      "lng": -0.101559,
+      "lat": 51.493213,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-05-02T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223693",
+      "name": "Grahame Park Way",
+      "lng": -0.246172,
+      "lat": 51.608918,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-07-09T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223694",
+      "name": "Cecilia Road",
+      "lng": -0.06836,
+      "lat": 51.54989,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-30T17:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223695",
+      "name": "Chigwell Road",
+      "lng": 0.038207,
+      "lat": 51.595229,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-11T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223696",
+      "name": "St John's Upper Holloway CE Primary School",
+      "lng": -0.132866,
+      "lat": 51.5625154,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-07-17T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223697",
+      "name": "Commercial Street",
+      "lng": -0.074271,
+      "lat": 51.518123,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-03-01T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223698",
+      "name": "Charing Cross Hospital",
+      "lng": -0.221561,
+      "lat": 51.487354,
+      "type": "reference",
+      "firstSeenYear": 2020,
+      "firstSeen": "2020-01-06T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223699",
+      "name": "Stockwell Road",
+      "lng": -0.117473,
+      "lat": 51.466706,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-04T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223700",
+      "name": "Garrett Lane",
+      "lng": -0.186775,
+      "lat": 51.440399,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-29T18:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223701",
+      "name": "High Street",
+      "lng": -0.41358,
+      "lat": 51.574253,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-23T10:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223702",
+      "name": "Durham Street",
+      "lng": -0.11909,
+      "lat": 51.485597,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-25T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223703",
+      "name": "Caledonian Road",
+      "lng": -0.117987,
+      "lat": 51.550067,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-25T07:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223704",
+      "name": "Devas Street",
+      "lng": -0.012704,
+      "lat": 51.523099,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-17T11:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223705",
+      "name": "Churchill Gardens Road",
+      "lng": -0.14503,
+      "lat": 51.486223,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-16T17:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223706",
+      "name": "Clifford Street",
+      "lng": -0.141896,
+      "lat": 51.51092,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-02-28T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223707",
+      "name": "Hendon Way",
+      "lng": -0.210037,
+      "lat": 51.571687,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-23T15:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223708",
+      "name": "Glaisher Street",
+      "lng": -0.0188,
+      "lat": 51.4831,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-24T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223709",
+      "name": "London Wall",
+      "lng": -0.085342,
+      "lat": 51.516749,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-02T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223710",
+      "name": "Savernake Road",
+      "lng": -0.1523385,
+      "lat": 51.5554849,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-04T18:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223711",
+      "name": "Fitzjohn Avenue",
+      "lng": -0.175939,
+      "lat": 51.551247,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-02T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223712",
+      "name": "Holloway Road",
+      "lng": -0.116092,
+      "lat": 51.555387,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-09-03T15:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223713",
+      "name": "Morpeth Street",
+      "lng": -0.047295,
+      "lat": 51.527588,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-16T10:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223714",
+      "name": "Haimo Road",
+      "lng": 0.040655,
+      "lat": 51.455253,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-16T15:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223715",
+      "name": "Broomhill Road",
+      "lng": 0.100759,
+      "lat": 51.379382,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-31T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223716",
+      "name": "Woolwich Road",
+      "lng": 0.126787,
+      "lat": 51.481228,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-22T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223717",
+      "name": "Dagnall Street",
+      "lng": -0.157493,
+      "lat": 51.4738,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-16T11:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223718",
+      "name": "Queen Margarets Grove",
+      "lng": -0.079761,
+      "lat": 51.549215,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-10T10:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223719",
+      "name": "Black Horse Court",
+      "lng": -0.088226,
+      "lat": 51.496482,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-12-13T19:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223720",
+      "name": "Kensington Church Walk",
+      "lng": -0.19241,
+      "lat": 51.501862,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-03-07T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223721",
+      "name": "Hunslett Street",
+      "lng": -0.048721,
+      "lat": 51.529308,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-22T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223722",
+      "name": "High Road",
+      "lng": -0.075379,
+      "lat": 51.39905,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-15T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223723",
+      "name": "Albert Street",
+      "lng": -0.143525,
+      "lat": 51.536271,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-03T21:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223724",
+      "name": "Cannon Street",
+      "lng": -0.089336,
+      "lat": 51.511403,
+      "type": "reference",
+      "firstSeenYear": 2020,
+      "firstSeen": "2020-08-06T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223725",
+      "name": "Peckham Road",
+      "lng": -0.078151,
+      "lat": 51.474326,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-19T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223726",
+      "name": "King William Walk",
+      "lng": -0.008609,
+      "lat": 51.481858,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-09-20T11:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223727",
+      "name": "Ballance Road",
+      "lng": -0.03614,
+      "lat": 51.5456,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-29T21:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223728",
+      "name": "Haverstock Hill",
+      "lng": -0.162351,
+      "lat": 51.549012,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-02T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223729",
+      "name": "Oakdale Road",
+      "lng": 0.033284,
+      "lat": 51.592485,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-16T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223730",
+      "name": "Ladbroke Grove",
+      "lng": -0.20529,
+      "lat": 51.510768,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-01T02:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223731",
+      "name": "Wyndham Road",
+      "lng": -0.320726,
+      "lat": 51.50061,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-17T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223732",
+      "name": "Richmond Road",
+      "lng": -0.057899,
+      "lat": 51.54337,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-02-08T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223733",
+      "name": "Whitehall",
+      "lng": -0.126167,
+      "lat": 51.504566,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-03-21T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223734",
+      "name": "High Road",
+      "lng": -0.299651,
+      "lat": 51.551997,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-03-16T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223735",
+      "name": "National Physical Laboratory",
+      "lng": -0.345043,
+      "lat": 51.42661,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-16T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223736",
+      "name": "Romford Road",
+      "lng": 0.058982,
+      "lat": 51.554615,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-29T21:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223737",
+      "name": "Commercial Street",
+      "lng": -0.074271,
+      "lat": 51.518123,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-02-28T11:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223738",
+      "name": "Columbia Road",
+      "lng": -0.074268,
+      "lat": 51.528491,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-16T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223739",
+      "name": "Edgware Road",
+      "lng": -0.161979,
+      "lat": 51.51419,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-01-22T15:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223740",
+      "name": "Shaftsbury Avenue",
+      "lng": -0.131959,
+      "lat": 51.51207,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-02-14T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223741",
+      "name": "Park Lane",
+      "lng": -0.153446,
+      "lat": 51.507988,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-01-22T17:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223742",
+      "name": "Farringdon Street",
+      "lng": -0.104526,
+      "lat": 51.514743,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-03-18T08:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223743",
+      "name": "Southbury Road",
+      "lng": -0.054961,
+      "lat": 51.649088,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-12-12T18:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223744",
+      "name": "St James",
+      "lng": -0.038547,
+      "lat": 51.474143,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-26T09:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223745",
+      "name": "Hertford Road",
+      "lng": -0.038301,
+      "lat": 51.673753,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-03-04T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223746",
+      "name": "Devonshire Street",
+      "lng": -0.255688,
+      "lat": 51.488199,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-18T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223747",
+      "name": "Crowthorne Road",
+      "lng": -0.218503,
+      "lat": 51.516554,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-05T10:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223748",
+      "name": "Cadogan Gardens",
+      "lng": -0.158772,
+      "lat": 51.493217,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-09T11:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223749",
+      "name": "Beckenham Lane",
+      "lng": 0.0057789,
+      "lat": 51.4073728,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-07-03T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223750",
+      "name": "Geraldine Street",
+      "lng": -0.105412,
+      "lat": 51.49562,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-02-14T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223751",
+      "name": "Church Street",
+      "lng": -0.00986,
+      "lat": 51.4813,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-09-21T08:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223752",
+      "name": "Station Parade",
+      "lng": 0.080874,
+      "lat": 51.539063,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-12T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223753",
+      "name": "Whipps Cross University Hospital",
+      "lng": 0.00283,
+      "lat": 51.577305,
+      "type": "reference",
+      "firstSeenYear": 2020,
+      "firstSeen": "2020-01-06T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223754",
+      "name": "Marylebone",
+      "lng": -0.174732,
+      "lat": 51.52304,
+      "type": "reference",
+      "firstSeenYear": 2019,
+      "firstSeen": "2019-02-13T15:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223755",
+      "name": "St Thomas's Hospital",
+      "lng": -0.11705,
+      "lat": 51.499104,
+      "type": "reference",
+      "firstSeenYear": 2020,
+      "firstSeen": "2020-01-13T17:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223756",
+      "name": "Blackfriars Road",
+      "lng": -0.104345,
+      "lat": 51.505529,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-02T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223757",
+      "name": "Mansford Street",
+      "lng": -0.061823,
+      "lat": 51.528757,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-09-28T16:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223758",
+      "name": "Bonington Road",
+      "lng": 0.21182,
+      "lat": 51.544414,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-23T09:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223759",
+      "name": "North Middlesex University Hospital",
+      "lng": -0.075493,
+      "lat": 51.6130738,
+      "type": "reference",
+      "firstSeenYear": 2020,
+      "firstSeen": "2020-03-31T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223760",
+      "name": "Parkside",
+      "lng": -0.222013,
+      "lat": 51.426126,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-24T14:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223761",
+      "name": "Camberwell Road",
+      "lng": -0.093557,
+      "lat": 51.475739,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-19T12:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223762",
+      "name": "Blomfontein Road",
+      "lng": -0.235418,
+      "lat": 51.514071,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-11-02T01:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223763",
+      "name": "The Royal London Hospital",
+      "lng": -0.058917,
+      "lat": 51.518778,
+      "type": "reference",
+      "firstSeenYear": 2020,
+      "firstSeen": "2020-02-25T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223764",
+      "name": "Upper Richmond Road",
+      "lng": -0.254736,
+      "lat": 51.465116,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-12-17T13:00:00Z",
+      "firstSeenEstimated": false
+    },
+    {
+      "id": "223765",
+      "name": "Woolwich Manor Way",
+      "lng": 0.060587,
+      "lat": 51.515901,
+      "type": "reference",
+      "firstSeenYear": 2018,
+      "firstSeen": "2018-10-31T10:00:00Z",
+      "firstSeenEstimated": false
+    }
+  ],
+  "timeline": [
+    {
+      "year": 2016,
+      "sensorCount": 18,
+      "districtsCovered": 12,
+      "peopleInRange": 2909091,
+      "isEstimate": false
+    },
+    {
+      "year": 2017,
+      "sensorCount": 18,
+      "districtsCovered": 12,
+      "peopleInRange": 2909091,
+      "isEstimate": false
+    },
+    {
+      "year": 2018,
+      "sensorCount": 74,
+      "districtsCovered": 30,
+      "peopleInRange": 7272727,
+      "isEstimate": false
+    },
+    {
+      "year": 2019,
+      "sensorCount": 94,
+      "districtsCovered": 32,
+      "peopleInRange": 7757576,
+      "isEstimate": false
+    },
+    {
+      "year": 2020,
+      "sensorCount": 100,
+      "districtsCovered": 33,
+      "peopleInRange": 8000000,
+      "isEstimate": false
+    },
+    {
+      "year": 2021,
+      "sensorCount": 100,
+      "districtsCovered": 33,
+      "peopleInRange": 8000000,
+      "isEstimate": false
+    },
+    {
+      "year": 2022,
+      "sensorCount": 100,
+      "districtsCovered": 33,
+      "peopleInRange": 8000000,
+      "isEstimate": false
+    },
+    {
+      "year": 2023,
+      "sensorCount": 100,
+      "districtsCovered": 33,
+      "peopleInRange": 8000000,
+      "isEstimate": false
+    },
+    {
+      "year": 2024,
+      "sensorCount": 100,
+      "districtsCovered": 33,
+      "peopleInRange": 8000000,
+      "isEstimate": false
+    },
+    {
+      "year": 2025,
+      "sensorCount": 100,
+      "districtsCovered": 33,
+      "peopleInRange": 8000000,
+      "isEstimate": false
+    },
+    {
+      "year": 2026,
+      "sensorCount": 100,
+      "districtsCovered": 33,
+      "peopleInRange": 8000000,
+      "isEstimate": false
+    }
+  ]
+}

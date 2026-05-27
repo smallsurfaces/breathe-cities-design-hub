@@ -1,0 +1,9 @@
+{
+  "borderRadius": {
+    "none":   { "$value": "0",      "$type": "borderRadius", "$description": "Sharp corners" },
+    "sm":     { "$value": "4px",    "$type": "borderRadius", "$description": "Subtle rounding — tags, badges" },
+    "md":     { "$value": "10px",   "$type": "borderRadius", "$description": "Medium — cards, inputs" },
+    "circle": { "$value": "50%",    "$type": "borderRadius", "$description": "Perfect circle — avatars" },
+    "pill":   { "$value": "9999px", "$type": "borderRadius", "$description": "Fully rounded — pill buttons" }
+  }
+}

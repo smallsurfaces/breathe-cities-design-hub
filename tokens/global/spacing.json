@@ -1,0 +1,16 @@
+{
+  "spacing": {
+    "xs":  { "$value": "10px",  "$type": "spacing", "$description": "Extra small — tight padding" },
+    "sm":  { "$value": "20px",  "$type": "spacing", "$description": "Small — component padding" },
+    "md":  { "$value": "40px",  "$type": "spacing", "$description": "Medium — section padding" },
+    "lg":  { "$value": "60px",  "$type": "spacing", "$description": "Large — section gaps" },
+    "xl":  { "$value": "80px",  "$type": "spacing", "$description": "Extra large — major section spacing" },
+    "2xl": { "$value": "120px", "$type": "spacing", "$description": "2XL — page-level spacing" },
+    "3xl": { "$value": "148px", "$type": "spacing", "$description": "3XL — hero and large section gaps" }
+  },
+  "container": {
+    "maxWidth":     { "$value": "1880px", "$type": "sizing", "$description": "Global container max-width" },
+    "contentWidth": { "$value": "1080px", "$type": "sizing", "$description": "Content max-width for text-heavy sections" },
+    "readingWidth": { "$value": "55ch",   "$type": "sizing", "$description": "Optimal reading line length" }
+  }
+}

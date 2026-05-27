@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breathe Cities — Design System</title>
+  <link rel="stylesheet" href="../dist/css/tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--bc-font-family-sans);
+      background: var(--bc-semantic-bg);
+      color: var(--bc-semantic-text);
+      font-size: var(--bc-font-size-body);
+      line-height: var(--bc-font-line-height-relaxed);
+      padding: var(--bc-spacing-lg);
+      max-width: var(--bc-container-content-width);
+      margin: 0 auto;
+    }
+
+    /* ── Layout ─────────────────────────────────────────────────── */
+    .section { margin-bottom: var(--bc-spacing-xl); }
+    .section-title {
+      font-size: var(--bc-font-size-title-small);
+      font-weight: var(--bc-font-weight-bold);
+      color: var(--bc-semantic-text);
+      border-bottom: 2px solid var(--bc-semantic-border);
+      padding-bottom: var(--bc-spacing-xs);
+      margin-bottom: var(--bc-spacing-md);
+      letter-spacing: var(--bc-font-letter-spacing-wide);
+      text-transform: uppercase;
+    }
+    .grid { display: flex; flex-wrap: wrap; gap: var(--bc-spacing-sm); }
+    .label {
+      font-size: var(--bc-font-size-caption);
+      color: var(--bc-semantic-muted);
+      margin-top: 6px;
+      font-family: var(--bc-font-family-mono);
+    }
+    .value {
+      font-size: 0.75rem;
+      color: var(--bc-semantic-muted);
+      font-family: var(--bc-font-family-mono);
+    }
+
+    /* ── Header ─────────────────────────────────────────────────── */
+    .header {
+      margin-bottom: var(--bc-spacing-xl);
+      padding-bottom: var(--bc-spacing-md);
+      border-bottom: 3px solid var(--bc-semantic-brand);
+    }
+    .header h1 {
+      font-size: var(--bc-font-size-title-large);
+      font-weight: var(--bc-font-weight-bold);
+      line-height: var(--bc-font-line-height-tight);
+      color: var(--bc-semantic-text);
+    }
+    .header p {
+      font-size: var(--bc-font-size-body);
+      color: var(--bc-semantic-muted);
+      margin-top: var(--bc-spacing-xs);
+    }
+
+    /* ── Colours ─────────────────────────────────────────────────── */
+    .swatch-wrap { display: flex; flex-direction: column; }
+    .swatch {
+      width: 120px;
+      height: 80px;
+      border-radius: var(--bc-border-radius-md);
+      border: 1px solid var(--bc-semantic-border);
+    }
+
+    /* ── Typography ──────────────────────────────────────────────── */
+    .type-row {
+      padding: var(--bc-spacing-sm) 0;
+      border-bottom: 1px solid var(--bc-semantic-border);
+      display: flex;
+      align-items: baseline;
+      gap: var(--bc-spacing-md);
+    }
+    .type-row .meta { min-width: 160px; flex-shrink: 0; }
+
+    /* ── Spacing ─────────────────────────────────────────────────── */
+    .space-row {
+      display: flex;
+      align-items: center;
+      gap: var(--bc-spacing-sm);
+      margin-bottom: var(--bc-spacing-xs);
+    }
+    .space-bar {
+      height: 24px;
+      background: var(--bc-semantic-brand);
+      border-radius: var(--bc-border-radius-sm);
+      opacity: 0.7;
+    }
+
+    /* ── Border Radius ───────────────────────────────────────────── */
+    .radius-box {
+      width: 80px;
+      height: 80px;
+      background: var(--bc-color-light-grey);
+      border: 2px solid var(--bc-semantic-brand);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 6px;
+    }
+
+    /* ── Buttons ─────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 11px 28px;
+      border-radius: var(--bc-border-radius-pill);
+      font-family: var(--bc-font-family-sans);
+      font-size: var(--bc-font-size-body);
+      font-weight: var(--bc-font-weight-medium);
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: background-color var(--bc-transition-fast), color var(--bc-transition-fast), border-color var(--bc-transition-fast);
+      text-decoration: none;
+    }
+    .btn-brand { background: var(--bc-semantic-brand); color: var(--bc-color-white); }
+    .btn-brand:hover { background: var(--bc-semantic-hover); }
+    .btn-accent { background: var(--bc-semantic-accent); color: var(--bc-color-white); }
+    .btn-accent:hover { background: var(--bc-semantic-hover); }
+    .btn-outline { background: transparent; color: var(--bc-semantic-text); border-color: var(--bc-semantic-text); }
+    .btn-outline:hover { border-color: var(--bc-semantic-hover); color: var(--bc-semantic-hover); }
+    .btn-outline-white { background: transparent; color: var(--bc-color-white); border-color: var(--bc-color-white); }
+    .btn-arrow {
+      width: 55px; height: 55px; padding: 0;
+      border-radius: var(--bc-border-radius-circle);
+      background: var(--bc-semantic-brand);
+      color: var(--bc-color-white);
+      font-size: 1.25rem;
+    }
+    .btn-arrow:hover { background: var(--bc-semantic-hover); }
+
+    .dark-row {
+      background: var(--bc-color-dark-blue);
+      padding: var(--bc-spacing-sm);
+      border-radius: var(--bc-border-radius-md);
+      display: flex;
+      gap: var(--bc-spacing-sm);
+      align-items: center;
+    }
+
+    /* ── Shadows ─────────────────────────────────────────────────── */
+    .shadow-box {
+      width: 120px; height: 80px;
+      background: var(--bc-color-white);
+      border-radius: var(--bc-border-radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: var(--bc-font-size-caption);
+      color: var(--bc-semantic-muted);
+    }
+
+    /* ── Transitions ─────────────────────────────────────────────── */
+    .transition-demo {
+      width: 120px; height: 48px;
+      background: var(--bc-semantic-brand);
+      border-radius: var(--bc-border-radius-md);
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      font-size: var(--bc-font-size-caption);
+      cursor: pointer;
+    }
+    .t-fast:hover { background: var(--bc-color-tangerine); transition: background var(--bc-transition-fast); }
+    .t-medium:hover { background: var(--bc-color-tangerine); transition: background var(--bc-transition-medium); }
+    .t-slow:hover { background: var(--bc-color-tangerine); transition: background var(--bc-transition-slow); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Breathe Cities</h1>
+    <p>Design System Preview — extracted from breathecities.org</p>
+  </header>
+
+  <!-- COLOURS: Global -->
+  <section class="section">
+    <h2 class="section-title">Colours — Global</h2>
+    <div class="grid">
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-dark-blue)"></div>
+        <div class="label">darkBlue</div>
+        <div class="value">--bc-color-dark-blue</div>
+        <div class="value">#003574</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-blue)"></div>
+        <div class="label">blue</div>
+        <div class="value">--bc-color-blue</div>
+        <div class="value">#0071c7</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-light-blue)"></div>
+        <div class="label">lightBlue</div>
+        <div class="value">--bc-color-light-blue</div>
+        <div class="value">#23bced</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-teal)"></div>
+        <div class="label">teal</div>
+        <div class="value">--bc-color-teal</div>
+        <div class="value">#2BCDB0</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-light-teal)"></div>
+        <div class="label">lightTeal</div>
+        <div class="value">--bc-color-light-teal</div>
+        <div class="value">#BAF0E6</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-green)"></div>
+        <div class="label">green</div>
+        <div class="value">--bc-color-green</div>
+        <div class="value">#03ab3d</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-tangerine)"></div>
+        <div class="label">tangerine</div>
+        <div class="value">--bc-color-tangerine</div>
+        <div class="value">#f55200</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-yellow)"></div>
+        <div class="label">yellow</div>
+        <div class="value">--bc-color-yellow</div>
+        <div class="value">#e8f000</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-light-grey)"></div>
+        <div class="label">lightGrey</div>
+        <div class="value">--bc-color-light-grey</div>
+        <div class="value">#f3f8fe</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-steel)"></div>
+        <div class="label">steel</div>
+        <div class="value">--bc-color-steel</div>
+        <div class="value">#b2c2d5</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-dark-blue-dim)"></div>
+        <div class="label">darkBlueDim</div>
+        <div class="value">--bc-color-dark-blue-dim</div>
+        <div class="value">#002a5b</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-color-white); border:1px solid #ddd;"></div>
+        <div class="label">white</div>
+        <div class="value">--bc-color-white</div>
+        <div class="value">#ffffff</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOURS: Semantic -->
+  <section class="section">
+    <h2 class="section-title">Colours — Semantic</h2>
+    <div class="grid">
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-bg); border:1px solid #ddd;"></div>
+        <div class="label">bg</div>
+        <div class="value">--bc-semantic-bg</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-text)"></div>
+        <div class="label">text</div>
+        <div class="value">--bc-semantic-text</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-brand)"></div>
+        <div class="label">brand</div>
+        <div class="value">--bc-semantic-brand</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-hover)"></div>
+        <div class="label">hover</div>
+        <div class="value">--bc-semantic-hover</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-border); border:1px solid #ddd;"></div>
+        <div class="label">border</div>
+        <div class="value">--bc-semantic-border</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-error)"></div>
+        <div class="label">error</div>
+        <div class="value">--bc-semantic-error</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-success)"></div>
+        <div class="label">success</div>
+        <div class="value">--bc-semantic-success</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:var(--bc-semantic-muted)"></div>
+        <div class="label">muted</div>
+        <div class="value">--bc-semantic-muted</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section class="section">
+    <h2 class="section-title">Typography</h2>
+
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">titleLarge</div>
+        <div class="value">4rem · weight 700</div>
+      </div>
+      <div style="font-size:var(--bc-font-size-title-large);font-weight:var(--bc-font-weight-bold);line-height:var(--bc-font-line-height-tight)">Air Quality</div>
+    </div>
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">titleMedium</div>
+        <div class="value">2.125rem · weight 700</div>
+      </div>
+      <div style="font-size:var(--bc-font-size-title-medium);font-weight:var(--bc-font-weight-bold);line-height:var(--bc-font-line-height-tight)">Breathe Cities Initiative</div>
+    </div>
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">titleSmall</div>
+        <div class="value">1.25rem · weight 700</div>
+      </div>
+      <div style="font-size:var(--bc-font-size-title-small);font-weight:var(--bc-font-weight-bold)">Clean Air for Urban Communities</div>
+    </div>
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">titleSub</div>
+        <div class="value">1.125rem · weight 500</div>
+      </div>
+      <div style="font-size:var(--bc-font-size-title-sub);font-weight:var(--bc-font-weight-medium)">Supporting cities to reduce air pollution</div>
+    </div>
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">body</div>
+        <div class="value">1rem · weight 300</div>
+      </div>
+      <div style="font-size:var(--bc-font-size-body);font-weight:var(--bc-font-weight-light);max-width:55ch">Air pollution is a major global health risk, causing millions of premature deaths each year. Breathe Cities works with urban leaders to implement proven strategies.</div>
+    </div>
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">bodySmaller</div>
+        <div class="value">0.875rem · weight 300</div>
+      </div>
+      <div style="font-size:var(--bc-font-size-body-smaller);font-weight:var(--bc-font-weight-light)">Secondary information and supporting text</div>
+    </div>
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">caption</div>
+        <div class="value">0.938rem · weight 300</div>
+      </div>
+      <div style="font-size:var(--bc-font-size-caption);color:var(--bc-semantic-muted)">Image caption or metadata label</div>
+    </div>
+    <div class="type-row">
+      <div class="meta">
+        <div class="label">mono</div>
+        <div class="value">Aeonik Mono</div>
+      </div>
+      <div style="font-family:var(--bc-font-family-mono);font-size:var(--bc-font-size-body-smaller)">--bc-semantic-brand: var(--bc-color-blue);</div>
+    </div>
+  </section>
+
+  <!-- SPACING -->
+  <section class="section">
+    <h2 class="section-title">Spacing</h2>
+    <div>
+      <div class="space-row">
+        <div class="meta" style="min-width:160px"><div class="label">xs</div><div class="value">10px</div></div>
+        <div class="space-bar" style="width:10px"></div>
+      </div>
+      <div class="space-row">
+        <div class="meta" style="min-width:160px"><div class="label">sm</div><div class="value">20px</div></div>
+        <div class="space-bar" style="width:20px"></div>
+      </div>
+      <div class="space-row">
+        <div class="meta" style="min-width:160px"><div class="label">md</div><div class="value">40px</div></div>
+        <div class="space-bar" style="width:40px"></div>
+      </div>
+      <div class="space-row">
+        <div class="meta" style="min-width:160px"><div class="label">lg</div><div class="value">60px</div></div>
+        <div class="space-bar" style="width:60px"></div>
+      </div>
+      <div class="space-row">
+        <div class="meta" style="min-width:160px"><div class="label">xl</div><div class="value">80px</div></div>
+        <div class="space-bar" style="width:80px"></div>
+      </div>
+      <div class="space-row">
+        <div class="meta" style="min-width:160px"><div class="label">2xl</div><div class="value">120px</div></div>
+        <div class="space-bar" style="width:120px"></div>
+      </div>
+      <div class="space-row">
+        <div class="meta" style="min-width:160px"><div class="label">3xl</div><div class="value">148px</div></div>
+        <div class="space-bar" style="width:148px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BORDER RADIUS -->
+  <section class="section">
+    <h2 class="section-title">Border Radius</h2>
+    <div class="grid" style="align-items:flex-end">
+      <div class="swatch-wrap">
+        <div class="radius-box" style="border-radius:var(--bc-border-radius-none)"><span class="value">none / 0</span></div>
+        <div class="label">none</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="radius-box" style="border-radius:var(--bc-border-radius-sm)"><span class="value">sm / 4px</span></div>
+        <div class="label">sm</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="radius-box" style="border-radius:var(--bc-border-radius-md)"><span class="value">md / 10px</span></div>
+        <div class="label">md</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="radius-box" style="border-radius:var(--bc-border-radius-circle)"><span class="value">circle</span></div>
+        <div class="label">circle / 50%</div>
+      </div>
+      <div class="swatch-wrap">
+        <div style="width:200px;height:48px;background:var(--bc-color-light-grey);border:2px solid var(--bc-semantic-brand);border-radius:var(--bc-border-radius-pill);display:flex;align-items:center;justify-content:center"><span class="value">pill / 9999px</span></div>
+        <div class="label">pill</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUTTONS -->
+  <section class="section">
+    <h2 class="section-title">Buttons</h2>
+    <div class="grid" style="align-items:center; margin-bottom: var(--bc-spacing-sm)">
+      <a class="btn btn-brand" href="#">Brand</a>
+      <a class="btn btn-accent" href="#">Accent</a>
+      <a class="btn btn-outline" href="#">Outline</a>
+      <a class="btn btn-arrow" href="#">→</a>
+    </div>
+    <div class="dark-row">
+      <a class="btn btn-outline-white" href="#">Outline White</a>
+      <span class="value" style="color:var(--bc-color-steel)">on dark background</span>
+    </div>
+  </section>
+
+  <!-- SHADOWS -->
+  <section class="section">
+    <h2 class="section-title">Shadows</h2>
+    <div class="grid">
+      <div class="swatch-wrap">
+        <div class="shadow-box" style="box-shadow:var(--bc-shadow-none);border:1px solid var(--bc-semantic-border)">none</div>
+        <div class="label">shadow/none</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="shadow-box" style="box-shadow:var(--bc-shadow-sm)">sm</div>
+        <div class="label">shadow/sm</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="shadow-box" style="box-shadow:var(--bc-shadow-md)">md</div>
+        <div class="label">shadow/md</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="shadow-box" style="box-shadow:var(--bc-shadow-lg)">lg</div>
+        <div class="label">shadow/lg</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSITIONS -->
+  <section class="section">
+    <h2 class="section-title">Transitions (hover to see)</h2>
+    <div class="grid">
+      <div class="swatch-wrap">
+        <div class="transition-demo t-fast">fast</div>
+        <div class="label">200ms ease-in-out</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="transition-demo t-medium">medium</div>
+        <div class="label">300ms ease-in-out</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="transition-demo t-slow">slow</div>
+        <div class="label">450ms cubic-bezier</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,930 @@
+{
+  "city": "bangkok",
+  "capturedAt": "2026-05-24T20:35:39.444Z",
+  "parameters": {
+    "pm25": [
+      {
+        "id": "135",
+        "name": "Prabadang Rehabiltation Center",
+        "locality": "Samut Prakan",
+        "coordinates": [
+          100.543436,
+          13.664087
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2022-10-04T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 15.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "418",
+        "name": "Department of Disease Control",
+        "locality": null,
+        "coordinates": [
+          100.527132,
+          13.853457
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T03:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 20,
+            "unit": "µg/m³",
+            "datetimeUtc": "2022-02-11T02:00:00Z",
+            "ageHours": 37530.604811944446,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "701",
+        "name": "Sukhothai Thammathirat Open University",
+        "locality": "Nonthaburi",
+        "coordinates": [
+          100.535641,
+          13.907861
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T02:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 6.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "906",
+        "name": "Residence for Dept. of Mineral Resources",
+        "locality": "Samut Prakan",
+        "coordinates": [
+          100.531805,
+          13.652141
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T03:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 12.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2167",
+        "name": "Highway District",
+        "locality": "Samut Sakhon",
+        "coordinates": [
+          100.315622,
+          13.7054879
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-02-11T11:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 7.8,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2326",
+        "name": "Thai Meteorological Department",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.605742,
+          13.666183
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 9.9,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T16:00:00Z",
+            "ageHours": 4.604811944444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2352",
+        "name": "Thonburi Power Sub-Station",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.486568,
+          13.727622
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2022-10-04T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 12.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2375",
+        "name": "Bodindecha Sing Singhaseni School",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.614567,
+          13.769634
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T02:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 10.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "2433",
+        "name": "Nonsi Witthaya School",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.5473333,
+          13.70806667
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 9.7,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T16:00:00Z",
+            "ageHours": 4.604811944444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "5545",
+        "name": "Chulalongkorn Hospital",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.536501,
+          13.729852
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-08-18T05:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 12.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T19:00:00Z",
+            "ageHours": 1.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225568",
+        "name": "Bang Khen District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.595839,
+          13.873603
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 15.1,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225571",
+        "name": "Bang Khun Thian District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.435902,
+          13.659908
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 24.4,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T16:00:00Z",
+            "ageHours": 76.60481194444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "225572",
+        "name": "Kasertsart University",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.575632,
+          13.839923
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 11.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225574",
+        "name": "Phra Kanong District Office,  Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.61457,
+          13.691511
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 10.1,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T17:00:00Z",
+            "ageHours": 3.6048119444444446,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225575",
+        "name": "Bangkok Noi Train Police Station",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.481137,
+          13.759619
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 7.6,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225577",
+        "name": "Bank of Ayuthaya Head Office Yan Nawa, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.54687,
+          13.679226
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 25,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T16:00:00Z",
+            "ageHours": 76.60481194444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "225580",
+        "name": "National Housing Authority Klongchan",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.646009,
+          13.779873
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 16.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T16:00:00Z",
+            "ageHours": 76.60481194444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "225582",
+        "name": "Khlong Toei District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.583747,
+          13.708488
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 11.8,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T18:00:00Z",
+            "ageHours": 2.6048119444444446,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225590",
+        "name": "Sai Mai District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.660628,
+          13.896035
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 12,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225591",
+        "name": "Ladphrao District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.607535,
+          13.803587
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 10.8,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225593",
+        "name": "Big C Supercenter Bang Na",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.635313,
+          13.667987
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 12.8,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225595",
+        "name": "Bang Bon 5 Market",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.372958,
+          13.639165
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 9.9,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225596",
+        "name": "Sathon District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.526787,
+          13.707763
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 11.3,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225599",
+        "name": "Bangrak Lovely Plaza",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.528055,
+          13.726136
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 20.8,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T16:00:00Z",
+            "ageHours": 76.60481194444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "225604",
+        "name": "Seacon Square",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.647615,
+          13.695561
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 25,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T16:00:00Z",
+            "ageHours": 76.60481194444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "225610",
+        "name": "Bueng Kum District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.669183,
+          13.785212
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 14,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-21T16:00:00Z",
+            "ageHours": 76.60481194444445,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "225612",
+        "name": "Bansomdejchaopraya Rajabhat University",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.487662,
+          13.732846
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 10,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225614",
+        "name": "Tha phra Intersection",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.474373,
+          13.729431
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 19.6,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225617",
+        "name": "Suan Luang District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.651705,
+          13.731051
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 7.2,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "225619",
+        "name": "Don Mueng District Office, Bangkok",
+        "locality": "Bangkok",
+        "coordinates": [
+          100.594877,
+          13.910986
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2021-04-29T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm25": {
+            "value": 10.9,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6048119444444444,
+            "isStale": false
+          }
+        }
+      }
+    ],
+    "pm10": [
+      {
+        "id": "94",
+        "name": "Din Daeng, Din Daeng",
+        "locality": null,
+        "coordinates": [
+          100.56892844813,
+          13.775373291477
+        ],
+        "quality": "high",
+        "provider": "Thailand",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2018-11-06T06:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 23,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-09-15T07:00:00Z",
+            "ageHours": 49861.60973638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "135",
+        "name": "Prabadang Rehabiltation Center",
+        "locality": "Samut Prakan",
+        "coordinates": [
+          100.543436,
+          13.664087
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2022-10-04T19:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 39,
+            "unit": "µg/m³",
+            "datetimeUtc": "2022-10-04T19:00:00Z",
+            "ageHours": 31873.609736388888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "138",
+        "name": "Lat Phrao Rd., Wang Thonglang",
+        "locality": null,
+        "coordinates": [
+          100.59607755884001,
+          13.792635009230002
+        ],
+        "quality": "high",
+        "provider": "Thailand",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 58,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-09-23T04:00:00Z",
+            "ageHours": 49672.60973638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "310",
+        "name": "Hiran Ruchi, Thon Buri",
+        "locality": null,
+        "coordinates": [
+          100.48601837802,
+          13.732878086814
+        ],
+        "quality": "high",
+        "provider": "Thailand",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 39,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-09-02T03:00:00Z",
+            "ageHours": 50177.60973638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "418",
+        "name": "Department of Disease Control",
+        "locality": null,
+        "coordinates": [
+          100.527132,
+          13.853457
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T03:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 33,
+            "unit": "µg/m³",
+            "datetimeUtc": "2022-02-11T02:00:00Z",
+            "ageHours": 37530.60973638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "701",
+        "name": "Sukhothai Thammathirat Open University",
+        "locality": "Nonthaburi",
+        "coordinates": [
+          100.535641,
+          13.907861
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T02:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 13,
+            "unit": "µg/m³",
+            "datetimeUtc": "2026-05-24T20:00:00Z",
+            "ageHours": 0.6097363888888889,
+            "isStale": false
+          }
+        }
+      },
+      {
+        "id": "798",
+        "name": "Din Daeng Rd., Din Daeng",
+        "locality": null,
+        "coordinates": [
+          100.550598,
+          13.762406000000002
+        ],
+        "quality": "high",
+        "provider": "Thailand",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 83,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-09-23T03:00:00Z",
+            "ageHours": 49673.60973638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "906",
+        "name": "Residence for Dept. of Mineral Resources",
+        "locality": "Samut Prakan",
+        "coordinates": [
+          100.531805,
+          13.652141
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T03:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 65,
+            "unit": "µg/m³",
+            "datetimeUtc": "2024-01-30T17:00:00Z",
+            "ageHours": 20283.609736388888,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "1205",
+        "name": "Khlong Chan, Bang kapi",
+        "locality": null,
+        "coordinates": [
+          100.636548,
+          13.78152
+        ],
+        "quality": "high",
+        "provider": "Thailand",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-01-30T01:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 27,
+            "unit": "µg/m³",
+            "datetimeUtc": "2020-07-16T06:45:00Z",
+            "ageHours": 51325.85973638889,
+            "isStale": true
+          }
+        }
+      },
+      {
+        "id": "2167",
+        "name": "Highway District",
+        "locality": "Samut Sakhon",
+        "coordinates": [
+          100.315622,
+          13.7054879
+        ],
+        "quality": "high",
+        "provider": "Air4Thai",
+        "owner": "Unknown Governmental Organization",
+        "firstSeen": "2016-02-11T11:00:00Z",
+        "attribution": null,
+        "parameters": {
+          "pm10": {
+            "value": 27,
+            "unit": "µg/m³",
+            "datetimeUtc": "2022-05-11T16:00:00Z",
+            "ageHours": 35380.60973638889,
+            "isStale": true
+          }
+        }
+      }
+    ]
+  }
+}

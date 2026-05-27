@@ -1,0 +1,80 @@
+[
+  {
+    "id": "see-my-place",
+    "name": "See my place",
+    "jobType": "functional",
+    "description": "Current conditions here, now"
+  },
+  {
+    "id": "benchmark",
+    "name": "Benchmark vs. standards",
+    "jobType": "functional",
+    "description": "WHO, national, and legal limits for comparison"
+  },
+  {
+    "id": "compare",
+    "name": "Compare across places/times",
+    "jobType": "functional",
+    "description": "Trends, regional patterns, cross-city"
+  },
+  {
+    "id": "know-the-source",
+    "name": "Know the source",
+    "jobType": "functional",
+    "description": "Apportionment: transport vs. burning vs. industry vs. power"
+  },
+  {
+    "id": "get-raw-data",
+    "name": "Get raw data out",
+    "jobType": "functional",
+    "description": "Download, API, spatial layers"
+  },
+  {
+    "id": "tell-the-story",
+    "name": "Tell the story",
+    "jobType": "functional",
+    "description": "Reframe data into narrative humans can feel"
+  },
+  {
+    "id": "make-credible-case",
+    "name": "Make a credible case",
+    "jobType": "functional",
+    "description": "Evidence for a story, campaign, or policy argument"
+  },
+  {
+    "id": "prove-trustworthy",
+    "name": "Prove it's trustworthy",
+    "jobType": "functional",
+    "description": "Provenance, calibration, custodianship"
+  },
+  {
+    "id": "connect-peers",
+    "name": "Connect with peers",
+    "jobType": "functional",
+    "description": "Find who else is working here, who hosts which sensor"
+  },
+  {
+    "id": "forecast",
+    "name": "Forecast forward",
+    "jobType": "functional",
+    "description": "Tomorrow, next week"
+  },
+  {
+    "id": "educate",
+    "name": "Educate / understand",
+    "jobType": "functional",
+    "description": "Jargon-free, embodied, accessible"
+  },
+  {
+    "id": "act-individually",
+    "name": "Act individually",
+    "jobType": "functional",
+    "description": "Convert data into personal behaviour change"
+  },
+  {
+    "id": "act-collectively",
+    "name": "Act collectively",
+    "jobType": "functional",
+    "description": "Pathway to join others — report, contact officials, petition"
+  }
+]

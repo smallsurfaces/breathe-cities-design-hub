@@ -1,0 +1,29 @@
+[
+  {
+    "id": "paris",
+    "name": "Paris",
+    "tier": 1,
+    "continent": "Europe",
+    "globalSouth": false,
+    "bcMember": true,
+    "structuralContext": "Airparif — reference model. Dense sensor network, real-time, WHO standards, source apportionment studies, public-facing platform."
+  },
+  {
+    "id": "cdmx",
+    "name": "Mexico City",
+    "tier": 2,
+    "continent": "Latin America",
+    "globalSouth": true,
+    "bcMember": true,
+    "structuralContext": "SIMAT network ~35 stations. IMECA standard more lenient than WHO — invalidates benchmark step across all chains. No source apportionment product."
+  },
+  {
+    "id": "accra",
+    "name": "Accra",
+    "tier": 3,
+    "continent": "Africa",
+    "globalSouth": true,
+    "bcMember": true,
+    "structuralContext": "4–5 reference grade monitors, not real-time (SD card only). 55 low-cost sensors across 13 of 25 city councils. Fragmented governance. No unified portal."
+  }
+]
