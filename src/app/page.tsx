@@ -18,13 +18,20 @@
  *
  *   Light mode only. BC semantic tokens only (no hardcoded hex). No emoji.
  *
+ *   The wireframe-notice strip (<WireframeNotice />) is mounted ABOVE the BC chrome — the same
+ *   vertical position it occupies on concept pages (where PrototypeHeader's Row 2 owns it) — so
+ *   the landing reads consistent with the concept pages a reviewer is about to click into. The
+ *   strip is single-sourced via the shared component; the copy lives in one place.
+ *
  * Key exports: default page component
  * External dependencies: next/link, @/components/concept (ConceptCard),
+ *   ./_components/WireframeNotice (the shared wireframe-disclaimer strip),
  *   ./_data/concept-registry (CONCEPTS)
  */
 
 import Link from 'next/link'
 import { ConceptCard } from '@/components/concept'
+import { WireframeNotice } from './_components/WireframeNotice'
 import { CONCEPTS } from './_data/concept-registry'
 
 /**
@@ -42,78 +49,84 @@ const CONCEPT_CARDS: readonly { label: string; route: string }[] = [
 
 export default function ClientReviewLanding() {
   return (
-    <main className="min-h-screen bg-background px-4 py-16 sm:py-20">
-      <div className="mx-auto max-w-3xl space-y-12">
-        {/* Title + framing paragraph. */}
-        <header className="space-y-5">
-          <div
-            className="inline-flex h-12 w-12 items-center justify-center rounded-full"
-            style={{ backgroundColor: 'var(--bc-semantic-brand)' }}
-          >
-            <span
-              className="text-base font-bold"
-              style={{ color: 'var(--bc-color-white)' }}
+    <>
+      {/* Wireframe-notice strip ABOVE the BC chrome — same vertical position it occupies on
+          concept pages (where PrototypeHeader's Row 2 owns it). Single-sourced component so the
+          copy and visual treatment cannot drift between this landing and the concept pages. */}
+      <WireframeNotice />
+
+      <main className="min-h-screen bg-background px-4 py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl space-y-12">
+          {/* Title + framing paragraph. */}
+          <header className="space-y-5">
+            <div
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full"
+              style={{ backgroundColor: 'var(--bc-semantic-brand)' }}
             >
-              BC
-            </span>
-          </div>
+              <span
+                className="text-base font-bold"
+                style={{ color: 'var(--bc-color-white)' }}
+              >
+                BC
+              </span>
+            </div>
 
-          <h1
-            className="text-3xl font-bold tracking-tight sm:text-4xl"
-            style={{ color: 'var(--bc-semantic-text)' }}
-          >
-            Breathe Cities — Concept Prototypes for Review
-          </h1>
-
-          <p
-            className="max-w-2xl text-base sm:text-lg"
-            style={{ color: 'var(--bc-semantic-muted)' }}
-          >
-            Four UX concept prototypes for the Breathe Cities Global Site. Shared with CAF, C40,
-            and Bloomberg for review.
-          </p>
-        </header>
-
-        {/* Four-card grid. ConceptCard provides the canonical outlined surface. The whole card
-            is a Link so the entire card area is the click target (a single-line label and an
-            "Open" affordance share the surface). */}
-        <section className="grid gap-4 sm:grid-cols-2">
-          {CONCEPT_CARDS.map((card) => (
-            <Link
-              key={card.route}
-              href={card.route}
-              className="group block transition-shadow hover:shadow-md"
+            <h1
+              className="text-3xl font-bold tracking-tight sm:text-4xl"
+              style={{ color: 'var(--bc-semantic-text)' }}
             >
-              <ConceptCard className="flex items-center justify-between gap-4 transition-colors group-hover:bg-muted/40">
-                <span
-                  className="text-base font-semibold"
-                  style={{ color: 'var(--bc-semantic-text)' }}
-                >
-                  {card.label}
-                </span>
-                <span
-                  className="text-sm font-medium"
-                  style={{ color: 'var(--bc-semantic-muted)' }}
-                  aria-hidden="true"
-                >
-                  Open &rarr;
-                </span>
-              </ConceptCard>
-            </Link>
-          ))}
-        </section>
+              Breathe Cities — Concept Prototypes for Review
+            </h1>
 
-        {/* Feedback sentence — explains the inline annotation tool that lives in each concept's
-            PrototypeHeader bar. Quiet treatment so it reads as guidance, not a call-to-action. */}
-        <footer className="pt-2">
-          <p
-            className="max-w-2xl text-sm"
-            style={{ color: 'var(--bc-semantic-muted)' }}
-          >
-            To leave feedback, use the annotation tool to comment inline on any element.
-          </p>
-        </footer>
-      </div>
-    </main>
+            <p
+              className="max-w-2xl text-base sm:text-lg"
+              style={{ color: 'var(--bc-semantic-muted)' }}
+            >
+              Four UX concept prototypes for the Breathe Cities Global Site.
+            </p>
+          </header>
+
+          {/* Four-card grid. ConceptCard provides the canonical outlined surface. The whole card
+              is a Link so the entire card area is the click target (a single-line label and an
+              "Open" affordance share the surface). */}
+          <section className="grid gap-4 sm:grid-cols-2">
+            {CONCEPT_CARDS.map((card) => (
+              <Link
+                key={card.route}
+                href={card.route}
+                className="group block transition-shadow hover:shadow-md"
+              >
+                <ConceptCard className="flex items-center justify-between gap-4 transition-colors group-hover:bg-muted/40">
+                  <span
+                    className="text-base font-semibold"
+                    style={{ color: 'var(--bc-semantic-text)' }}
+                  >
+                    {card.label}
+                  </span>
+                  <span
+                    className="text-sm font-medium"
+                    style={{ color: 'var(--bc-semantic-muted)' }}
+                    aria-hidden="true"
+                  >
+                    Open &rarr;
+                  </span>
+                </ConceptCard>
+              </Link>
+            ))}
+          </section>
+
+          {/* Feedback sentence — explains the inline annotation tool that lives in each concept's
+              PrototypeHeader bar. Quiet treatment so it reads as guidance, not a call-to-action. */}
+          <footer className="pt-2">
+            <p
+              className="max-w-2xl text-sm"
+              style={{ color: 'var(--bc-semantic-muted)' }}
+            >
+              To leave feedback, use the annotation tool to comment inline on any element.
+            </p>
+          </footer>
+        </div>
+      </main>
+    </>
   )
 }

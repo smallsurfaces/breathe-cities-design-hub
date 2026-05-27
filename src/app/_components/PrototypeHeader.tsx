@@ -38,13 +38,15 @@
  *
  * Wireframe disclaimer
  *   Below the bar row sits a thin, full-width disclaimer banner shown on EVERY build that mounts
- *   this header (so the framing is single-sourced, not per-concept). The copy is deliberately
- *   GENERIC — it names no concept — so it reads correctly everywhere. See WIREFRAME_DISCLAIMER.
+ *   this header (so the framing is single-sourced, not per-concept). The copy and visual
+ *   treatment live in <WireframeNotice />, which the client-review landing also mounts so the
+ *   strip cannot drift between the landing and the concept pages.
  *
  * Key exports: PrototypeHeader (named)
  * External dependencies: next/link, next/navigation (usePathname),
  *   lucide-react (ArrowLeft), ../_data/build-date,
- *   ../../components/annotation/AnnotationLayer, ../../lib/comments/client
+ *   ../../components/annotation/AnnotationLayer, ../../lib/comments/client,
+ *   ./WireframeNotice
  */
 
 "use client";
@@ -56,6 +58,7 @@ import { ArrowLeft } from "lucide-react";
 import { buildDateForPath, formatBuildDate } from "../_data/build-date";
 import AnnotationLayer from "../../components/annotation/AnnotationLayer";
 import { createApiPersistence } from "../../lib/comments/client";
+import { WireframeNotice } from "./WireframeNotice";
 
 /**
  * Derive a stable build slug from a route pathname — used as the Blobs store key and the
@@ -71,13 +74,6 @@ function pathToBuildId(pathname: string): string {
   if (trimmed === "") return "hub-home";
   return trimmed.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
-
-/**
- * The single, GENERIC wireframe disclaimer shown beneath the bar on every build. Named no concept
- * on purpose — it must read correctly on all of them. Locked copy (do not edit without a decision).
- */
-const WIREFRAME_DISCLAIMER =
-  "Concept wireframe — no visual design applied yet. Review the UX and the high-level concept, not the visual design.";
 
 /** Props for PrototypeHeader. */
 type PrototypeHeaderProps = {
@@ -215,17 +211,11 @@ export function PrototypeHeader({
       </div>
 
       {/*
-        Row 2 — the GENERIC wireframe disclaimer. Single-sourced here so it shows identically on
-        every build that mounts this header; it names no concept. Quiet muted styling on a subtle
-        muted fill so it reads as framing, not as a loud warning. role="note" so assistive tech
-        treats it as an aside, not an alert.
+        Row 2 — the GENERIC wireframe disclaimer. Single-sourced via <WireframeNotice /> so it
+        shows identically on every build that mounts this header AND on the client-review landing
+        (src/app/page.tsx) — copy and visual treatment cannot drift between the two surfaces.
       */}
-      <div
-        role="note"
-        className="w-full border-t border-border bg-muted/40 px-4 py-1.5 text-center text-[11px] leading-snug text-muted-foreground"
-      >
-        {WIREFRAME_DISCLAIMER}
-      </div>
+      <WireframeNotice />
     </header>
   );
 }
