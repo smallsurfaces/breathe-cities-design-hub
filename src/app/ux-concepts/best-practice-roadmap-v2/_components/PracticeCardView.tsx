@@ -1225,10 +1225,11 @@ function CityExampleRow({
 export function PracticeCardView({
   practice,
   // wireframe-lock-2026-05-26 client-share build: city/[slug] detail route was
-  // removed (depends on the live OpenAQ map). Default flipped to false so the
-  // city-name renders as an inert label. Inert path was already coded in
-  // CityExampleRow (see below). No new copy, no new visual treatment.
-  linkCities = false,
+  // Option A revert (2026-05-27): city/[slug] detail route restored with live
+  // OpenAQ Mapbox embed. Default flipped back to true so the city-name renders
+  // as a Link to that detail page. The inert path remains coded in
+  // CityExampleRow for any future caller that opts out.
+  linkCities = true,
   anchorId,
 }: PracticeCardViewProps) {
   const domain = getDomainById(practice.domainId);
@@ -1325,10 +1326,10 @@ interface PracticeCardTileProps {
 export function PracticeCardTile({
   practice,
   example,
-  // wireframe-lock-2026-05-26 client-share build: city/[slug] detail route was
-  // removed. Default flipped to false; the inert-label path (line ~1370) was
-  // already coded into the tile.
-  linkCity = false,
+  // Option A revert (2026-05-27): city/[slug] detail route restored. Default
+  // flipped back to true; the inert-label path (line ~1370) remains for the
+  // city detail page itself, which opts out (it would link to itself).
+  linkCity = true,
   showDomainTag = false,
   layout = "vertical",
 }: PracticeCardTileProps) {

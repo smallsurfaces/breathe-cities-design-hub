@@ -96,10 +96,10 @@ export default async function DomainDetailV2Page({ params }: DomainPageProps) {
                     key={`${practice.id}-${example.citySlug}`}
                     practice={practice}
                     example={example}
-                    // wireframe-lock-2026-05-26 client-share build: city/[slug]
-                    // detail route was removed, so the city name renders as an
-                    // inert label here (visual preserved).
-                    linkCity={false}
+                    // Option A revert (2026-05-27): city/[slug] detail route
+                    // restored. City name is once again a Link to its detail
+                    // page — matches the source `09839c6` call-site.
+                    linkCity={true}
                   />
                 ))
               )}

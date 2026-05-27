@@ -2,15 +2,13 @@
  * toolkit-nav.ts — the single source for the toolkit section's BcHeader nav set.
  *
  * Purpose
- *   wireframe-lock-2026-05-26 client-share build: only the catalogue LANDING surface remains
- *   (/ux-concepts/toolkit); the real-time monitoring COMPONENT subroute was removed because it
- *   depended on a live OpenAQ Mapbox embed. This module is retained because the landing still
- *   imports TOOLKIT_NAV and TOOLKIT_ROUTE, and the shared-nav contract is the right place to
- *   reintroduce additional toolkit surfaces from when they re-enter the snapshot.
- *
- *   Historical context (kept for future agents): the file originally existed because two toolkit
- *   surfaces both rendered the shared BcHeader and the two inline nav arrays had drifted out of
- *   sync. Centralising the nav here made the drift impossible.
+ *   The toolkit has two surfaces that both render the shared BcHeader: the catalogue LANDING
+ *   (/ux-concepts/toolkit) and the real-time monitoring COMPONENT (/ux-concepts/toolkit/
+ *   real-time-monitoring). Their nav bars must read identically — same labels, same order, with
+ *   "Toolkit" as the live (current-section) item on both. Previously each surface defined its own
+ *   nav array inline and the two drifted out of sync (one gained News and dropped Toolkit; the
+ *   other did the reverse). This module exists so the nav is defined ONCE and imported into both
+ *   configs, making that drift impossible.
  *
  *   Live vs inert follows the BcChrome contract (see components/concept/BcChrome.tsx): an item is
  *   LIVE when href !== '#' (rendered as a clickable link / current-section affordance) and inert

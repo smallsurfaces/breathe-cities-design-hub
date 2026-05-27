@@ -11,12 +11,11 @@
  *
  *   Mapping to the 8 toolkit capabilities (ids match data/toolkit-data.ts TOOL_LABELS so the shared
  *   sketch panels can be keyed off them):
- *     - Components (live digital surfaces a city embeds): monitoring, benchmarking, forecasting,
- *       health, openData.
+ *     - Components (live digital surfaces a city embeds): monitoring (AVAILABLE), benchmarking,
+ *       forecasting, health, openData.
  *     - Guidance (a study / methodology / programme, not a live widget): sourceId, advocacy, action.
- *   wireframe-lock-2026-05-26 client-share build: the Real-time Monitoring subroute was removed
- *   (it depended on a live OpenAQ Mapbox embed and an OPENAQ_API_KEY secret). All eight cards
- *   now render as Coming-soon previews — the catalogue still reads as a complete stack.
+ *   Real-time Monitoring is the only Available capability and the only card that links through
+ *   (to /ux-concepts/toolkit/real-time-monitoring); the other seven are Coming soon previews.
  *
  * Key exports: CatalogueStatus, CatalogueTier, CatalogueEntry, COMPONENT_ENTRIES, GUIDANCE_ENTRIES,
  *   TOOLKIT_CHROME
@@ -48,12 +47,12 @@ export type CatalogueEntry = {
   href: string | null
 }
 
+/** The live route for the one shipping component. */
+const RT_MONITORING_ROUTE = '/ux-concepts/toolkit/real-time-monitoring'
+
 /**
- * Component-tier entries — live digital surfaces a city would embed. All previewed as Coming
- * soon for this client review snapshot (wireframe-lock-2026-05-26). The Real-time Monitoring
- * subroute carried a live OpenAQ Mapbox embed and was removed from the snapshot; its card is
- * preserved as a Coming-soon preview alongside the other seven so the catalogue still reads as
- * a complete stack.
+ * Component-tier entries — live digital surfaces a city would embed. Real-time Monitoring ships
+ * today (links through); the rest are previewed as Coming soon.
  */
 export const COMPONENT_ENTRIES: readonly CatalogueEntry[] = [
   {
@@ -62,8 +61,8 @@ export const COMPONENT_ENTRIES: readonly CatalogueEntry[] = [
     blurb:
       'A live map of a city’s air-quality sensors — what is measuring, what it reads now, and how fresh that reading is. The foundation the rest of the stack builds on.',
     tier: 'component',
-    status: 'coming-soon',
-    href: null,
+    status: 'available',
+    href: RT_MONITORING_ROUTE,
   },
   {
     id: 'benchmarking',

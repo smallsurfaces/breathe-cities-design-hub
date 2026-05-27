@@ -5,19 +5,17 @@
  *   The toolkit landing, reframed from the v2 per-city AUDIT to a component CATALOGUE: it lays out
  *   everything a complete air-quality stack needs, grouped into Components (live digital surfaces a
  *   city embeds) and Guidance (studies / methodologies / programmes), and shows which parts BC
- *   offers today.
- *
- *   wireframe-lock-2026-05-26 client-share build: the Real-time Monitoring subroute carried a
- *   live OpenAQ Mapbox embed and was removed from this snapshot. All eight catalogue cards now
- *   render as Coming-soon previews.
+ *   offers today. Real-time Monitoring is the one Available capability and links through to its
+ *   component page; the other seven are Coming-soon previews (sketch kept, card de-emphasised, not
+ *   linked).
  *
  *   Dropped from the v2 shell (deliberately, per the reframe): the city selector, the per-city
  *   lit/dim mechanic, and the sensor-density strip. The catalogue is about the STACK, not one city.
  *
  *   Chrome is rendered INLINE here (PrototypeHeader + BcHeader + BcFooter) rather than via a
- *   toolkit-level layout.tsx — historically the inline chrome avoided double-rendering with the
- *   nested real-time-monitoring layout; the nested route is gone but inline chrome stays so the
- *   landing keeps its own self-contained chrome contract.
+ *   toolkit-level layout.tsx — a layout at this segment would also wrap the nested
+ *   /toolkit/real-time-monitoring route (which has its own chrome), double-rendering it. Rendering
+ *   chrome in the page keeps the two surfaces independent.
  *
  * Route: /ux-concepts/toolkit
  *

@@ -12,18 +12,12 @@
  *       shadow-sm) — functional-colour rule: colour encodes data/status, never decoration.
  *       No hardcoded hex. No emoji. Light mode only.
  *
- *   wireframe-lock-2026-05-26 client-share build: the per-city detail page (`city/[slug]`) was
- *   removed (it depended on the live OpenAQ Mapbox embed). The city cards on this listing are now
- *   inert — rendered as plain <div>s with the same outlined-card classes so the visual is preserved
- *   exactly. The `→` arrow affordance has also been removed: the cards no longer navigate anywhere,
- *   so the arrow would mis-signal interactivity. The hover-shadow transition is dropped too for the
- *   same reason — colour / motion encode affordance, and these cards have none. The coverage badge
- *   remains so the card still carries the at-a-glance "domains covered" payload.
- *
  * Key exports: default page component
- * External dependencies: @/data/roadmap-data, @/components/concept
+ * External dependencies: next/link, lucide-react, @/data/roadmap-data, @/components/concept
  */
 
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import { CITIES, getCoverageCount } from '@/data/roadmap-data'
 
 /** Region filter chip labels — inert, for IA fidelity with the real BC site. */
@@ -96,19 +90,13 @@ export default function CitiesV2Page() {
           {CITIES.map((city) => {
             const coverage = getCoverageCount(city.slug)
 
-            // wireframe-lock-2026-05-26 client-share build: per-city detail
-            // page (city/[slug]) was removed for this client review snapshot
-            // because it depended on the live OpenAQ Mapbox embed. The card is
-            // rendered as an inert <div> with the same className so the visual
-            // is preserved exactly — only the link target is gone. The `→` arrow
-            // and hover-shadow transition were also removed: both signal
-            // interactivity, and there is nowhere to navigate to.
             return (
-              <div
+              <Link
                 key={city.slug}
-                className="flex flex-col justify-between rounded-2xl border border-border bg-background p-5 shadow-sm"
+                href={`/ux-concepts/best-practice-roadmap-v2/city/${city.slug}`}
+                className="group flex flex-col justify-between rounded-2xl border border-border bg-background p-5 shadow-sm transition-shadow hover:shadow-md"
               >
-                {/* Top row: city name + country. */}
+                {/* Top row: city name + hover arrow. */}
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <h2 className="text-lg font-bold text-foreground leading-snug">
@@ -118,13 +106,16 @@ export default function CitiesV2Page() {
                       {city.country}
                     </p>
                   </div>
+                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors group-hover:border-primary group-hover:text-primary">
+                    <ArrowRight className="h-4 w-4" />
+                  </span>
                 </div>
 
                 {/* Coverage badge — bottom of card. */}
                 <p className="mt-4 text-xs font-medium text-muted-foreground">
                   {coverage} {coverage === 1 ? 'domain' : 'domains'} covered
                 </p>
-              </div>
+              </Link>
             )
           })}
         </div>
