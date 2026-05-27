@@ -9,12 +9,15 @@
  *
  *   Content
  *     - Title + single-paragraph framing
- *     - Four cards linking to the four wireframe-locked UX concepts
+ *     - Four cards linking to the four wireframe-locked UX concepts, stacked vertically
+ *       in dev-hub display order (Roadmap → Resident Concerns → Toolkit → AQ Network)
  *     - One sentence explaining the inline annotation tool for feedback
+ *     - Small Surfaces credit line — quiet signature treatment at the foot of the page
  *
  *   Routing into concepts is single-sourced from the concept registry
  *   (src/app/_data/concept-registry.ts) so concept titles and routes cannot drift between
- *   this landing and each concept's own PrototypeHeader tooling bar.
+ *   this landing and each concept's own PrototypeHeader tooling bar. The card labels come
+ *   straight from the registry's `title` field — same canonical strings the dev hub uses.
  *
  *   Light mode only. BC semantic tokens only (no hardcoded hex). No emoji.
  *
@@ -23,28 +26,36 @@
  *   the landing reads consistent with the concept pages a reviewer is about to click into. The
  *   strip is single-sourced via the shared component; the copy lives in one place.
  *
+ *   Small Surfaces logo
+ *     The orange "small surfaces" wordmark (public/brand/small-surfaces-logo-molten.png) sits as
+ *     a quiet credit at the bottom of the page, paired with muted "Designed by" preamble. The
+ *     wordmark is intentionally outside the BC token palette (BC blue is the primary brand;
+ *     the orange is a studio signature) — bottom-of-page placement gives the two colours visual
+ *     separation rather than fighting in the header row.
+ *
  * Key exports: default page component
- * External dependencies: next/link, @/components/concept (ConceptCard),
+ * External dependencies: next/link, next/image, @/components/concept (ConceptCard),
  *   ./_components/WireframeNotice (the shared wireframe-disclaimer strip),
- *   ./_data/concept-registry (CONCEPTS)
+ *   ./_data/concept-registry (CONCEPTS, ConceptId)
  */
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { ConceptCard } from '@/components/concept'
 import { WireframeNotice } from './_components/WireframeNotice'
-import { CONCEPTS } from './_data/concept-registry'
+import { CONCEPTS, type ConceptId } from './_data/concept-registry'
 
 /**
- * Card labels for this surface. The concept-registry titles read "Global Site Concept - <name>"
- * — the right voice for the internal hub. For the client landing the cards use the short
- * concept name (the brief's labels) so the four-card grid scans cleanly on first read. Routes
- * remain single-sourced from the registry, so a registry route change still propagates here.
+ * Display order for the landing cards. Top-to-bottom order matches the dev hub
+ * (Roadmap → Resident Concerns → Toolkit → AQ Network) so the two surfaces present the four
+ * concepts in the same sequence — reviewers see the same ordering whichever surface they hit.
+ * The ConceptId values resolve to canonical titles + routes via the CONCEPTS registry.
  */
-const CONCEPT_CARDS: readonly { label: string; route: string }[] = [
-  { label: 'Best Practice Roadmap', route: CONCEPTS.roadmap.route },
-  { label: 'AQ Network', route: CONCEPTS.aqNetwork.route },
-  { label: 'Resident Concerns', route: CONCEPTS.residentConcerns.route },
-  { label: 'City AQ Toolkit', route: CONCEPTS.toolkit.route },
+const CONCEPT_ORDER: readonly ConceptId[] = [
+  'roadmap',
+  'residentConcerns',
+  'toolkit',
+  'aqNetwork',
 ]
 
 export default function ClientReviewLanding() {
@@ -86,44 +97,75 @@ export default function ClientReviewLanding() {
             </p>
           </header>
 
-          {/* Four-card grid. ConceptCard provides the canonical outlined surface. The whole card
-              is a Link so the entire card area is the click target (a single-line label and an
-              "Open" affordance share the surface). */}
-          <section className="grid gap-4 sm:grid-cols-2">
-            {CONCEPT_CARDS.map((card) => (
-              <Link
-                key={card.route}
-                href={card.route}
-                className="group block transition-shadow hover:shadow-md"
-              >
-                <ConceptCard className="flex items-center justify-between gap-4 transition-colors group-hover:bg-muted/40">
-                  <span
-                    className="text-base font-semibold"
-                    style={{ color: 'var(--bc-semantic-text)' }}
-                  >
-                    {card.label}
-                  </span>
-                  <span
-                    className="text-sm font-medium"
-                    style={{ color: 'var(--bc-semantic-muted)' }}
-                    aria-hidden="true"
-                  >
-                    Open &rarr;
-                  </span>
-                </ConceptCard>
-              </Link>
-            ))}
+          {/* Vertical card stack. ConceptCard provides the canonical outlined surface. Cards are
+              full-width and stacked top-to-bottom; the whole card is a Link so the entire card
+              area is the click target. Labels and routes both come from the concept registry —
+              no hand-curated strings on this surface. */}
+          <section className="flex flex-col gap-4">
+            {CONCEPT_ORDER.map((id) => {
+              const concept = CONCEPTS[id]
+              return (
+                <Link
+                  key={id}
+                  href={concept.route}
+                  className="group block transition-shadow hover:shadow-md"
+                >
+                  <ConceptCard className="flex items-center justify-between gap-4 transition-colors group-hover:bg-muted/40">
+                    <span
+                      className="text-base font-semibold"
+                      style={{ color: 'var(--bc-semantic-text)' }}
+                    >
+                      {concept.title}
+                    </span>
+                    <span
+                      className="text-sm font-medium"
+                      style={{ color: 'var(--bc-semantic-muted)' }}
+                      aria-hidden="true"
+                    >
+                      Open &rarr;
+                    </span>
+                  </ConceptCard>
+                </Link>
+              )
+            })}
           </section>
 
-          {/* Feedback sentence — explains the inline annotation tool that lives in each concept's
-              PrototypeHeader bar. Quiet treatment so it reads as guidance, not a call-to-action. */}
-          <footer className="pt-2">
+          {/* Footer block:
+                1. Feedback sentence — explains the inline annotation tool that lives in each
+                   concept's PrototypeHeader bar. Quiet treatment so it reads as guidance,
+                   not a call-to-action.
+                2. Small Surfaces credit — quiet "Designed by [wordmark]" signature. Sits below
+                   the feedback line, with breathing room. Bottom-of-page placement separates the
+                   orange wordmark from the BC blue chrome at the top of the page. */}
+          <footer className="space-y-8 pt-2">
             <p
               className="max-w-2xl text-sm"
               style={{ color: 'var(--bc-semantic-muted)' }}
             >
               To leave feedback, use the annotation tool to comment inline on any element.
             </p>
+
+            <div className="flex items-center gap-2">
+              <span
+                className="text-xs"
+                style={{ color: 'var(--bc-semantic-muted)' }}
+              >
+                Designed by
+              </span>
+              {/* The wordmark renders at a small fixed display height (~20px); the intrinsic
+                  3710×1149 ratio yields ~65px width. next/image with `unoptimized` is intentional
+                  here — Next.js's image optimiser is fussy about static export contexts, and the
+                  wordmark is already a small PNG, so the optimiser brings no real benefit. */}
+              <Image
+                src="/brand/small-surfaces-logo-molten.png"
+                alt="Small Surfaces"
+                width={65}
+                height={20}
+                priority={false}
+                unoptimized
+                style={{ height: '20px', width: 'auto' }}
+              />
+            </div>
           </footer>
         </div>
       </main>
