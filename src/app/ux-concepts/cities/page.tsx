@@ -53,11 +53,17 @@ import {
   ConceptCard,
   InfoTooltip,
 } from "@/components/concept";
+import { CONCEPTS } from "../../_data/concept-registry";
 import { CITIES_CHROME } from "./_components/bc-chrome.config";
 import { CONCERNS, citiesWithAnswersFor } from "./_data/concerns-data";
 
+/**
+ * Tab title pulled from the concept registry — the SAME canonical string used by the hub
+ * landing and by the PrototypeHeader bar. The earlier "Resident Concerns — Breathe Cities
+ * (concept mock)" was internal-sounding; gate-blocker pass 2026-05-28 retired it.
+ */
 export const metadata: Metadata = {
-  title: "Resident Concerns — Breathe Cities (concept mock)",
+  title: CONCEPTS.residentConcerns.title,
 };
 
 /**

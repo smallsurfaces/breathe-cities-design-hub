@@ -19,6 +19,7 @@ import {
   getDomainBySlug,
   getPracticesByDomain,
 } from '@/data/roadmap-data'
+import { CONCEPTS } from '../../../../_data/concept-registry'
 import { PracticeCardTile } from '../../_components/PracticeCardView'
 import { StageBadge } from '../../_components/StageBadge'
 
@@ -31,6 +32,11 @@ export function generateStaticParams() {
   return DOMAINS.map((d) => ({ slug: d.slug }))
 }
 
+/**
+ * Per-domain <title>. Reads the canonical concept name from the registry and prepends the
+ * domain short name. The earlier title exposed internal "v2" wording; gate-blocker pass
+ * 2026-05-28 retired that.
+ */
 export async function generateMetadata({
   params,
 }: DomainPageProps): Promise<Metadata> {
@@ -38,8 +44,8 @@ export async function generateMetadata({
   const domain = getDomainBySlug(slug)
   return {
     title: domain
-      ? `${domain.shortName} — Best Practice Roadmap v2`
-      : 'Domain — Best Practice Roadmap v2',
+      ? `${domain.shortName} — ${CONCEPTS.roadmap.title}`
+      : CONCEPTS.roadmap.title,
   }
 }
 

@@ -17,8 +17,19 @@
  */
 
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import { ArrowRight } from 'lucide-react'
 import { CITIES, getCoverageCount } from '@/data/roadmap-data'
+import { CONCEPTS } from '../../../_data/concept-registry'
+
+/**
+ * Tab title. The cities-index page lives under the Best Practice Roadmap concept;
+ * the title reads "Cities — <canonical roadmap name>" so reviewers in multi-tab review
+ * can distinguish it from the roadmap top page and from a city detail page.
+ */
+export const metadata: Metadata = {
+  title: `Cities — ${CONCEPTS.roadmap.title}`,
+}
 
 /** Region filter chip labels — inert, for IA fidelity with the real BC site. */
 const REGION_FILTERS = [

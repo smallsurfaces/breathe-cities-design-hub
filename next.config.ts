@@ -84,6 +84,15 @@ const nextConfig: NextConfig = {
             key: "Referrer-Policy",
             value: "strict-origin-when-cross-origin",
           },
+          // Confidentiality discipline (gate-blocker pass 2026-05-28).
+          // Strongest signal — applies to every response (SSR pages AND static
+          // assets AND API routes), and is honoured by crawlers that ignore
+          // <meta name="robots"> tags. Complemented by the layout's
+          // `metadata.robots` export, an inline <meta name="robots"> tag in
+          // layout.tsx, and a disallow-all /robots.txt — three layers because
+          // confidentiality for the CAF/C40/Bloomberg review window is worth the
+          // belt-and-braces.
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
           {
             key: "Content-Security-Policy-Report-Only",
             value: cspReportOnly,

@@ -1,8 +1,8 @@
 /**
- * page.tsx — JTBD City Toolkit · Real-time monitoring COMPONENT PAGE (restructured, increment 2).
+ * page.tsx — City AQ Toolkit · Real-time monitoring component page.
  *
  * Purpose:
- *   In increment 1 this route WAS the map (full-viewport). Increment 2 demotes the map to one
+ *   The "Real-time monitoring" capability inside the City AQ Toolkit concept. Map demoted to one
  *   embedded live-demo block inside a proper component page:
  *     1. INTRO — what real-time monitoring is + why it is the foundation component of the AQ stack
  *        (a ConceptHero + a short framing section).
@@ -10,27 +10,45 @@
  *        "check air quality" probe) contained as a BORDERED block, not full-bleed (MapDemo).
  *     3. ADOPTION — the mock "Bring it to your city" steps + a mock embed snippet (AdoptionGuide),
  *        framing the map as an adoptable open-source component.
- *     4. NAV — visible links back to the toolkit landing AND the dev hub (no dead ends).
+ *     4. NAV — a single visible link back to the toolkit landing. The sticky PrototypeHeader's
+ *        "Back to hub" affordance handles the hub navigation; no page-bottom hub button (matches
+ *        the convention on the other concept deep pages).
  *
  *   This page is a server component: it composes the client MapDemo (the only interactive part) and
  *   the presentational AdoptionGuide. The chrome (PrototypeHeader + BcHeader + BcFooter) is rendered
  *   by layout.tsx.
  *
+ *   Gate-blocker pass (2026-05-28): removed the page-bottom "Dev hub" button — internal-team
+ *   language visible to clients, and redundant with the PrototypeHeader's "Back to hub". Also
+ *   added a distinctive per-page title via `generateMetadata` so this route is distinguishable
+ *   from the toolkit landing in multi-tab review.
+ *
  * Route: /ux-concepts/toolkit/real-time-monitoring
  *
- * Key exports: ToolkitRtMonitoringPage (default)
+ * Key exports: ToolkitRtMonitoringPage (default), generateMetadata
  * External dependencies: next/link, @/components/concept (ConceptHero, ConceptCard,
- *   ConceptSectionHeader), ./_components/MapDemo, ./_components/AdoptionGuide.
+ *   ConceptSectionHeader), ./_components/MapDemo, ./_components/AdoptionGuide,
+ *   ../../../_data/concept-registry (CONCEPTS).
  */
 
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import {
   ConceptHero,
   ConceptCard,
   ConceptSectionHeader,
 } from '@/components/concept'
+import { CONCEPTS } from '../../../_data/concept-registry'
 import MapDemo from './_components/MapDemo'
 import { AdoptionGuide } from './_components/AdoptionGuide'
+
+/**
+ * Distinctive tab title. Reads the concept's canonical registry title and appends the
+ * capability name so multi-tab review can distinguish this from the toolkit landing.
+ */
+export const metadata: Metadata = {
+  title: `Real-time monitoring — ${CONCEPTS.toolkit.title}`,
+}
 
 export default function ToolkitRtMonitoringPage() {
   return (
@@ -64,7 +82,10 @@ export default function ToolkitRtMonitoringPage() {
         {/* ── 3. Adoption — mock "Bring it to your city" ──────────────────────────── */}
         <AdoptionGuide />
 
-        {/* ── 4. Nav — back to the toolkit landing AND the dev hub (no dead ends) ──── */}
+        {/* ── 4. Nav — single "Back to the toolkit" link. The PrototypeHeader's sticky
+                "Back to hub" affordance handles hub navigation; the previous page-bottom
+                "Dev hub" button was internal-team language and redundant with the sticky
+                back-to-hub (gate-blocker pass 2026-05-28). ──── */}
         <nav
           className="flex flex-wrap gap-3 border-t pt-8"
           style={{ borderColor: 'var(--bc-color-steel)' }}
@@ -79,12 +100,6 @@ export default function ToolkitRtMonitoringPage() {
             }}
           >
             Back to the toolkit
-          </Link>
-          <Link
-            href="/"
-            className="inline-flex items-center rounded-xl border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
-          >
-            Dev hub
           </Link>
         </nav>
       </div>

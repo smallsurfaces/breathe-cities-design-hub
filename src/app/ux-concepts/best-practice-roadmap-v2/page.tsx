@@ -45,6 +45,7 @@
  */
 
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import {
   ConceptHero,
   ConceptStat,
@@ -54,7 +55,18 @@ import {
   PRACTICE_CARDS,
   type Stage,
 } from '@/data/roadmap-data'
+import { CONCEPTS } from '../../_data/concept-registry'
 import { PracticeCardHero } from './_components/PracticeCardHero'
+
+/**
+ * Tab title pulled from the concept registry — the SAME canonical string used by the hub
+ * landing and by the PrototypeHeader bar. Without an explicit `metadata` export this
+ * route fell through to the root "Breathe Cities" title (bug-tester finding for the four
+ * generic-titled routes in multi-tab review). Gate-blocker pass 2026-05-28.
+ */
+export const metadata: Metadata = {
+  title: CONCEPTS.roadmap.title,
+}
 
 /**
  * Stage dot style override — 4 DISTINCT --bc-* token tints applied at the presentation

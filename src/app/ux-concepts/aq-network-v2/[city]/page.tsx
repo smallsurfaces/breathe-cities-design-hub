@@ -60,6 +60,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { BadgeCheck, MapPin } from 'lucide-react'
+import { CONCEPTS } from '../../../_data/concept-registry'
 import {
   getCityProfile,
   CITY_PROFILE_SLUGS,
@@ -131,7 +132,12 @@ export function generateStaticParams(): { city: string }[] {
   return CITY_PROFILE_SLUGS.map((slug) => ({ city: slug }))
 }
 
-/** Per-city <title>. Resolves the profile so an unknown slug still gets a sensible title. */
+/**
+ * Per-city <title>. Reads the canonical concept name from the registry and prepends the
+ * city — distinguishable from the AQ Network landing in multi-tab review. The earlier
+ * title exposed internal "v2" / "(concept)" suffixes; gate-blocker pass 2026-05-28
+ * retired that wording.
+ */
 export async function generateMetadata({
   params,
 }: {
@@ -142,8 +148,8 @@ export async function generateMetadata({
   return {
     title:
       profile !== undefined
-        ? `${profile.name} — AQ Network v2 (concept)`
-        : 'AQ Network v2 (concept)',
+        ? `${profile.name} — ${CONCEPTS.aqNetwork.title}`
+        : CONCEPTS.aqNetwork.title,
   }
 }
 

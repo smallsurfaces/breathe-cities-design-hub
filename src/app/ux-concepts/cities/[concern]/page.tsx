@@ -53,6 +53,7 @@ import {
   ConceptCard,
   InfoTooltip,
 } from "@/components/concept";
+import { CONCEPTS } from "../../../_data/concept-registry";
 import { CITIES_CHROME } from "../_components/bc-chrome.config";
 import { EntryCard } from "../_components/EntryCard";
 import {
@@ -88,6 +89,11 @@ export function generateStaticParams() {
   return CONCERNS.map((c) => ({ concern: c.key }));
 }
 
+/**
+ * Per-concern <title>. Reads the canonical concept name from the registry and prepends
+ * the resident voice. The earlier title exposed internal "(Breathe Cities concept mock)"
+ * wording; gate-blocker pass 2026-05-28 retired it.
+ */
 export async function generateMetadata({
   params,
 }: ConcernPageProps): Promise<Metadata> {
@@ -95,8 +101,8 @@ export async function generateMetadata({
   const concern = concernByKey(key);
   return {
     title: concern
-      ? `${concern.voice} — Resident Concerns (Breathe Cities concept mock)`
-      : "Concern — Resident Concerns (Breathe Cities concept mock)",
+      ? `${concern.voice} — ${CONCEPTS.residentConcerns.title}`
+      : CONCEPTS.residentConcerns.title,
   };
 }
 

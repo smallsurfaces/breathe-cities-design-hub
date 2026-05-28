@@ -58,22 +58,12 @@ import { ArrowLeft } from "lucide-react";
 import { buildDateForPath, formatBuildDate } from "../_data/build-date";
 import AnnotationLayer from "../../components/annotation/AnnotationLayer";
 import { createApiPersistence } from "../../lib/comments/client";
+// pathToBuildId moved into a shared lib file (lib/comments/build-ids.ts) so the SAME
+// derivation is used by both the client annotation widget (here) AND the server route
+// (/api/comments). That sharing closes the gate where the server accepted arbitrary
+// client-supplied buildIds — see api/comments/route.ts for the binding check.
+import { pathToBuildId } from "../../lib/comments/build-ids";
 import { WireframeNotice } from "./WireframeNotice";
-
-/**
- * Derive a stable build slug from a route pathname — used as the Blobs store key and the
- * localStorage cache key for a build's comments. Deterministic across reloads:
- *   "/ux-concepts/cities"            → "ux-concepts-cities"
- *   "/ux-concepts/toolkit"           → "ux-concepts-toolkit"
- *   "/"                              → "hub-home"
- * Strips leading/trailing slashes, lowercases, and replaces path separators + unsafe
- * characters with hyphens so the key is filesystem/URL safe.
- */
-function pathToBuildId(pathname: string): string {
-  const trimmed = pathname.replace(/^\/+|\/+$/g, "");
-  if (trimmed === "") return "hub-home";
-  return trimmed.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-}
 
 /** Props for PrototypeHeader. */
 type PrototypeHeaderProps = {

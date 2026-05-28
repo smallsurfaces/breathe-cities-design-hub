@@ -1,0 +1,6 @@
+# Confidential client-review prototypes — do not index.
+# Companion to the X-Robots-Tag header (next.config.ts) and the <meta name="robots">
+# tag in app/layout.tsx — three-layer confidentiality discipline for the
+# CAF / C40 / Bloomberg review window.
+User-agent: *
+Disallow: /

@@ -25,6 +25,7 @@
  *   ./_components/{toolkit-catalogue.config, CatalogueCard}
  */
 
+import type { Metadata } from 'next'
 import { PrototypeHeader } from '../../_components/PrototypeHeader'
 import { CONCEPTS } from '../../_data/concept-registry'
 import {
@@ -39,6 +40,16 @@ import {
   TOOLKIT_CHROME,
 } from './_components/toolkit-catalogue.config'
 import { CatalogueCard } from './_components/CatalogueCard'
+
+/**
+ * Tab title pulled from the concept registry — the SAME canonical string used by the hub
+ * landing and by the PrototypeHeader bar. Without an explicit metadata export this route
+ * fell through to the root "Breathe Cities" title (bug-tester finding for the four
+ * generic-titled routes in multi-tab review). Gate-blocker pass 2026-05-28.
+ */
+export const metadata: Metadata = {
+  title: CONCEPTS.toolkit.title,
+}
 
 export default function ToolkitLandingPage() {
   return (

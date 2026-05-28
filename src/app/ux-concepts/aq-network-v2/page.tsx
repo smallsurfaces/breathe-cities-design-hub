@@ -32,13 +32,19 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { ConceptHero, ConceptSectionHeader } from '@/components/concept'
+import { CONCEPTS } from '../../_data/concept-registry'
 import { NetworkGlobe } from './_components/NetworkGlobe'
 import { CollectiveGoalImpact } from './_components/CollectiveGoalImpact'
 import { getProgrammeSnapshot } from './_data/sensor-snapshots/programme'
 import { CITY_PROFILE_SLUGS } from './_data/cities'
 
+/**
+ * Tab title pulled from the concept registry — the SAME canonical string used by the hub
+ * landing and by the PrototypeHeader bar. The earlier "AQ Network v2 (concept)" exposed
+ * internal versioning to clients; gate-blocker pass 2026-05-28 retired that.
+ */
 export const metadata: Metadata = {
-  title: 'AQ Network v2 (concept)',
+  title: CONCEPTS.aqNetwork.title,
 }
 
 /**

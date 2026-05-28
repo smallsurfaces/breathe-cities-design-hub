@@ -24,6 +24,7 @@ import {
   getPracticesByCity,
   getDomainById,
 } from '@/data/roadmap-data'
+import { CONCEPTS } from '../../../../_data/concept-registry'
 import { CityMapHero } from '../../_components/CityMapHero'
 import { PracticeCardTile } from '../../_components/PracticeCardView'
 
@@ -36,6 +37,11 @@ export function generateStaticParams() {
   return CITIES.map((c) => ({ slug: c.slug }))
 }
 
+/**
+ * Per-city <title>. Reads the canonical concept name from the registry and prepends the
+ * city. The earlier title exposed internal "v2" wording; gate-blocker pass 2026-05-28
+ * retired that.
+ */
 export async function generateMetadata({
   params,
 }: CityPageProps): Promise<Metadata> {
@@ -43,8 +49,8 @@ export async function generateMetadata({
   const city = getCityBySlug(slug)
   return {
     title: city
-      ? `${city.name} — Best Practice Roadmap v2`
-      : 'City — Best Practice Roadmap v2',
+      ? `${city.name} — ${CONCEPTS.roadmap.title}`
+      : CONCEPTS.roadmap.title,
   }
 }
 
