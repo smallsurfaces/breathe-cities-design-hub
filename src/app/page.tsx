@@ -2,15 +2,15 @@
  * page.tsx — Client-facing landing for the breathe-cities-design-hub review snapshot.
  *
  * Purpose
- *   The single landing surface for the public client-review URL. Frames the four UX concept
+ *   The single landing surface for the public client-review URL. Frames the three UX concept
  *   prototypes for CAF / C40 / Bloomberg and routes into each. This is NOT the internal dev
  *   hub at breath-cities-design-dev — that hub carries the design system, jtbd framework,
  *   integration prototypes, and other surfaces not meant for external eyes.
  *
  *   Content
  *     - Title + single-paragraph framing
- *     - Four cards linking to the four wireframe-locked UX concepts, stacked vertically
- *       in dev-hub display order (Roadmap → Resident Concerns → Toolkit → AQ Network)
+ *     - Three cards linking to the three wireframe-locked UX concepts, stacked vertically
+ *       in dev-hub display order (Roadmap → Toolkit → AQ Network)
  *     - One sentence explaining the inline annotation tool for feedback
  *     - Small Surfaces credit line — quiet signature treatment at the foot of the page
  *
@@ -47,13 +47,12 @@ import { CONCEPTS, type ConceptId } from './_data/concept-registry'
 
 /**
  * Display order for the landing cards. Top-to-bottom order matches the dev hub
- * (Roadmap → Resident Concerns → Toolkit → AQ Network) so the two surfaces present the four
+ * (Roadmap → Toolkit → AQ Network) so the two surfaces present the three
  * concepts in the same sequence — reviewers see the same ordering whichever surface they hit.
  * The ConceptId values resolve to canonical titles + routes via the CONCEPTS registry.
  */
 const CONCEPT_ORDER: readonly ConceptId[] = [
   'roadmap',
-  'residentConcerns',
   'toolkit',
   'aqNetwork',
 ]
@@ -93,7 +92,7 @@ export default function ClientReviewLanding() {
               className="max-w-2xl text-base sm:text-lg"
               style={{ color: 'var(--bc-semantic-muted)' }}
             >
-              Four UX concept prototypes for the Breathe Cities Global Site.
+              Three UX concept prototypes for the Breathe Cities Global Site.
             </p>
           </header>
 
