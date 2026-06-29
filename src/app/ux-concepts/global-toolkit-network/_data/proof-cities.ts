@@ -248,7 +248,7 @@ export const PROOF_CITIES: ProofCity[] = [
         name: 'Street-level concentration map',
         blurb: 'NO2 and PM10 modelled across 56,000 points, queryable by address with route exposure.',
         category: 'Component',
-        url: 'https://airedemadrid.madrid.es/portales/calidadaire/es/En-portada/Mapa-de-concentracion-de-contaminantes-por-calle-estimacion-/',
+        url: null,
         provider: null,
       },
       {
