@@ -2,15 +2,14 @@
  * page.tsx — Client-facing landing for the breathe-cities-design-hub review snapshot.
  *
  * Purpose
- *   The single landing surface for the public client-review URL. Frames the three UX concept
- *   prototypes for CAF / C40 / Bloomberg and routes into each. This is NOT the internal dev
+ *   The single landing surface for the public client-review URL. Frames the one UX concept
+ *   prototype for CAF / C40 / Bloomberg and routes into it. This is NOT the internal dev
  *   hub at breath-cities-design-dev — that hub carries the design system, jtbd framework,
  *   integration prototypes, and other surfaces not meant for external eyes.
  *
  *   Content
  *     - Title + single-paragraph framing
- *     - Three cards linking to the three wireframe-locked UX concepts, stacked vertically
- *       in dev-hub display order (Roadmap → Toolkit → AQ Network)
+ *     - One card linking to the wireframe-locked UX concept (BC Global Toolkit Network)
  *     - One sentence explaining the inline annotation tool for feedback
  *     - Small Surfaces credit line — quiet signature treatment at the foot of the page
  *
@@ -46,15 +45,15 @@ import { WireframeNotice } from './_components/WireframeNotice'
 import { CONCEPTS, type ConceptId } from './_data/concept-registry'
 
 /**
- * Display order for the landing cards. Top-to-bottom order matches the dev hub
- * (Roadmap → Toolkit → AQ Network) so the two surfaces present the three
- * concepts in the same sequence — reviewers see the same ordering whichever surface they hit.
- * The ConceptId values resolve to canonical titles + routes via the CONCEPTS registry.
+ * Display order for the landing cards. For this client-share round (promotion 2026-06-29) the hub
+ * lists ONLY the BC Global Toolkit Network concept; the earlier three concepts (AQ Roadmap, City AQ
+ * Toolkit, AQ Network Membership) are hidden by being removed from this array, the same visibility
+ * mechanism used to hide Resident Concerns (commit 56dab2f). Their registry entries and routes
+ * remain intact (unlinked, not deleted). The ConceptId values resolve to canonical titles + routes
+ * via the CONCEPTS registry.
  */
 const CONCEPT_ORDER: readonly ConceptId[] = [
-  'roadmap',
-  'toolkit',
-  'aqNetwork',
+  'globalToolkitNetwork',
 ]
 
 export default function ClientReviewLanding() {
@@ -85,14 +84,14 @@ export default function ClientReviewLanding() {
               className="text-3xl font-bold tracking-tight sm:text-4xl"
               style={{ color: 'var(--bc-semantic-text)' }}
             >
-              Breathe Cities — Concept Prototypes for Review
+              Breathe Cities — Concept Prototype for Review
             </h1>
 
             <p
               className="max-w-2xl text-base sm:text-lg"
               style={{ color: 'var(--bc-semantic-muted)' }}
             >
-              Three UX concept prototypes for the Breathe Cities Global Site.
+              UX concept prototype for the Breathe Cities Global Site.
             </p>
           </header>
 

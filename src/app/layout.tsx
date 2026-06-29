@@ -23,7 +23,7 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
  * review is worth the belt-and-braces.
  */
 export const metadata: Metadata = {
-  title: "Breathe Cities — Concept Prototypes for Review",
+  title: "Breathe Cities — Concept Prototype for Review",
   description: "Air quality monitoring and insights for cities",
   robots: {
     index: false,
